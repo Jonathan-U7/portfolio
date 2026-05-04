@@ -1,0 +1,408 @@
+<!doctype html>
+<!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║  IT & SUPPORT — Career Landing Page                     ║
+  ║  Nation: EARTH KINGDOM  ·  Element: Earth               ║
+  ║                                                          ║
+  ║  HOW TO FILL THIS PAGE — search "FILL:" to find all     ║
+  ║  placeholders. Replace every bracketed field below.     ║
+  ║                                                          ║
+  ║  CHECKLIST:                                              ║
+  ║  [ ] hero-name — your full name                         ║
+  ║  [ ] hero-tagline — 1 sentence, IT/support focus        ║
+  ║  [ ] Email / LinkedIn / GitHub / Resume links           ║
+  ║  [ ] About paragraphs (2–3 sentences each)              ║
+  ║  [ ] Skill badges — add/remove for your certs/tools     ║
+  ║  [ ] 2–4 Experience entries                             ║
+  ║  [ ] 3–4 Project/initiative cards                       ║
+  ╚══════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- FILL: Update page title with your name -->
+  <title>IT Support &amp; Systems — Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="IT Support and Systems Administration portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="career.css" />
+  <style>
+    /* ── EARTH KINGDOM palette ── */
+    :root {
+      --c-bg:       #0e1408;
+      --c-card:     rgba(18, 28, 12, 0.93);
+      --c-border:   #4a7a28;
+      --c-accent:   #6aaa3a;
+      --c-accent2:  #8a6840;
+      --c-badge-bg: rgba(30, 55, 15, 0.85);
+      --c-heading:  #8acc50;
+      --c-text:     #b8d898;
+      --c-grid:     rgba(90, 140, 40, 0.07);
+      --c-sep:      rgba(74, 122, 40, 0.28);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="career-nav" aria-label="Page navigation">
+  <a href="../index-pixel.html" class="nav-btn">← PORTFOLIO</a>
+  <span class="career-nav-title">EARTH KINGDOM · IT &amp; SUPPORT</span>
+  <a href="#contact" class="nav-btn">CONTACT ↓</a>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════
+     HERO — Ba Sing Se outer wall + city skyline
+══════════════════════════════════════════════════════ -->
+<header class="career-hero" id="hero">
+
+  <svg class="hero-scene" viewBox="0 0 1400 560"
+       shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg"
+       aria-hidden="true" preserveAspectRatio="xMidYMax slice">
+
+    <!-- ── SKY — green-blue gradient ── -->
+    <rect x="0" y="0"   width="1400" height="80"  fill="#2a4870"/>
+    <rect x="0" y="80"  width="1400" height="80"  fill="#3a5c80"/>
+    <rect x="0" y="160" width="1400" height="80"  fill="#4a7090"/>
+    <rect x="0" y="240" width="1400" height="80"  fill="#4a7840"/>
+    <rect x="0" y="320" width="1400" height="60"  fill="#5a8840"/>
+    <rect x="0" y="380" width="1400" height="60"  fill="#6a9840"/>
+
+    <!-- ── CLOUDS ── -->
+    <rect x="60"   y="20"  width="140" height="22" fill="#c8d8e8" opacity="0.50"/>
+    <rect x="80"   y="8"   width="90"  height="20" fill="#d8e8f4" opacity="0.50"/>
+    <rect x="420"  y="35"  width="130" height="20" fill="#c8d8e8" opacity="0.42"/>
+    <rect x="440"  y="22"  width="80"  height="18" fill="#d8e8f4" opacity="0.42"/>
+    <rect x="900"  y="18"  width="150" height="20" fill="#c8d8e8" opacity="0.45"/>
+    <rect x="920"  y="6"   width="100" height="18" fill="#d8e8f4" opacity="0.45"/>
+    <rect x="1200" y="40"  width="120" height="18" fill="#c8d8e8" opacity="0.38"/>
+
+    <!-- ── DISTANT HILLS / PLAINS ── -->
+    <rect x="0"    y="350" width="300"  height="80" fill="#3a6020"/>
+    <rect x="200"  y="330" width="300"  height="100" fill="#4a7028"/>
+    <rect x="400"  y="360" width="250"  height="70" fill="#3a6020"/>
+    <rect x="600"  y="340" width="200"  height="90" fill="#4a7028"/>
+    <rect x="750"  y="360" width="300"  height="70" fill="#3a6020"/>
+    <rect x="950"  y="330" width="250"  height="100" fill="#4a7028"/>
+    <rect x="1100" y="355" width="300"  height="75" fill="#3a6020"/>
+
+    <!-- ── TREES (simple pixel shapes) ── -->
+    <!-- Left cluster -->
+    <rect x="40"  y="320" width="24"  height="50" fill="#2a4a10"/>
+    <rect x="28"  y="296" width="48"  height="32" fill="#3a6018"/>
+    <rect x="36"  y="280" width="32"  height="20" fill="#4a7820"/>
+    <rect x="90"  y="328" width="20"  height="42" fill="#2a4a10"/>
+    <rect x="80"  y="306" width="40"  height="28" fill="#3a6018"/>
+    <!-- Right cluster -->
+    <rect x="1340" y="320" width="24"  height="50" fill="#2a4a10"/>
+    <rect x="1328" y="296" width="48"  height="32" fill="#3a6018"/>
+    <rect x="1336" y="280" width="32"  height="20" fill="#4a7820"/>
+    <rect x="1290" y="328" width="20"  height="42" fill="#2a4a10"/>
+    <rect x="1280" y="306" width="40"  height="28" fill="#3a6018"/>
+
+    <!-- ── CITY BEHIND WALL — rooftops peeking over ── -->
+    <!-- Pagoda/tower tops -->
+    <rect x="500" y="240" width="60"  height="80"  fill="#8a7050"/>
+    <rect x="490" y="230" width="80"  height="14"  fill="#a08058"/>
+    <rect x="496" y="216" width="68"  height="16"  fill="#b09060"/>
+    <rect x="620" y="260" width="50"  height="60"  fill="#8a7050"/>
+    <rect x="612" y="250" width="66"  height="12"  fill="#a08058"/>
+    <rect x="700" y="250" width="80"  height="70"  fill="#7a6040"/>
+    <rect x="692" y="240" width="96"  height="14"  fill="#988050"/>
+    <rect x="800" y="255" width="60"  height="65"  fill="#8a7050"/>
+    <rect x="792" y="245" width="76"  height="12"  fill="#a08058"/>
+    <rect x="880" y="244" width="50"  height="76"  fill="#8a7050"/>
+    <rect x="872" y="234" width="66"  height="14"  fill="#b09060"/>
+
+    <!-- ── BA SING SE OUTER WALL ── -->
+    <!-- Wall base — massive, stone grey-brown -->
+    <rect x="0"   y="400" width="1400" height="160" fill="#6a5a38"/>
+    <rect x="0"   y="395" width="1400" height="8"   fill="#8a7850"/>
+    <rect x="0"   y="388" width="1400" height="8"   fill="#9a8858"/>
+    <!-- Stone block divisions (vertical lines) -->
+    <rect x="80"  y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="180" y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="280" y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="380" y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="480" y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="580" y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="680" y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="780" y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="880" y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="980" y="400" width="6"   height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="1080" y="400" width="6"  height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="1180" y="400" width="6"  height="160" fill="#5a4a28" opacity="0.7"/>
+    <rect x="1280" y="400" width="6"  height="160" fill="#5a4a28" opacity="0.7"/>
+    <!-- Horizontal mortar lines -->
+    <rect x="0" y="450" width="1400" height="5"   fill="#5a4a28" opacity="0.6"/>
+    <rect x="0" y="500" width="1400" height="5"   fill="#5a4a28" opacity="0.6"/>
+    <!-- Wall top battlements -->
+    <rect x="0"   y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="80"  y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="160" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="240" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="320" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="400" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="480" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="560" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="640" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="720" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="800" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="880" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="960" y="388" width="60"  height="14"  fill="#7a6840"/>
+    <rect x="1040" y="388" width="60" height="14"  fill="#7a6840"/>
+    <rect x="1120" y="388" width="60" height="14"  fill="#7a6840"/>
+    <rect x="1200" y="388" width="60" height="14"  fill="#7a6840"/>
+    <rect x="1280" y="388" width="60" height="14"  fill="#7a6840"/>
+    <rect x="1360" y="388" width="40" height="14"  fill="#7a6840"/>
+
+    <!-- Gate structure (center) -->
+    <rect x="640" y="340" width="120" height="60"  fill="#7a6840"/>
+    <rect x="660" y="350" width="80"  height="50"  fill="#1a0808"/>
+    <rect x="630" y="330" width="140" height="16"  fill="#9a8850"/>
+    <rect x="620" y="316" width="160" height="16"  fill="#b09860"/>
+
+    <!-- ── GROUND GRASS ── -->
+    <rect x="0"   y="560" width="1400" height="0"  fill="#4a7028"/>
+
+  </svg>
+
+  <div class="hero-content">
+    <span class="nation-badge">EARTH KINGDOM · EARTHBENDER</span>
+    <!-- FILL: Replace "YOUR NAME" with your actual name -->
+    <h1 class="hero-name">YOUR NAME</h1>
+    <p class="hero-track">IT SUPPORT · SYSTEMS ADMINISTRATION · HELP DESK</p>
+    <!-- FILL: Replace with your own tagline for IT roles -->
+    <p class="hero-tagline fill-me">1-sentence tagline — e.g. "I keep systems stable, users unblocked, and networks secure."</p>
+    <div class="hero-ctas">
+      <!-- FILL: Update href with your actual email -->
+      <a href="mailto:your@email.com" class="cta-btn cta-primary">SEND MESSAGE</a>
+      <!-- FILL: Update href to your resume PDF -->
+      <a href="../resume.pdf" target="_blank" class="cta-btn cta-secondary">VIEW RESUME</a>
+    </div>
+  </div>
+</header>
+
+<main class="career-main">
+
+  <!-- ── ABOUT ── -->
+  <section class="career-section" id="about">
+    <h2 class="section-title">// ABOUT</h2>
+    <div class="about-card">
+      <!--
+        FILL: Write 2–3 sentences about yourself from an IT perspective.
+        Focus on: your experience with hardware/software support, ticketing systems,
+        networking, administration, and the type of environment you thrive in.
+        Example: "I'm a CS student with hands-on experience in Tier 1–2 helpdesk support
+        and Windows/Linux system administration. I enjoy troubleshooting complex issues
+        and building documentation that reduces repeat tickets."
+      -->
+      <p class="fill-me">ABOUT PARAGRAPH 1: Your IT background, the systems you've worked with, and what kind of IT problems energize you. Keep it 2–3 sentences.</p>
+      <p class="fill-me">ABOUT PARAGRAPH 2 (optional): Certifications you hold or are pursuing, environments you've supported (enterprise, education, small business), or your support philosophy.</p>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="career-section" id="skills">
+    <h2 class="section-title">// SKILLS &amp; TOOLS</h2>
+    <!--
+      FILL: Remove badges for tools you haven't used. Add anything specific to your experience.
+      Certifications (CompTIA A+, Network+, etc.) go in a separate "Certifications" category.
+    -->
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <h3>Operating Systems</h3>
+        <div class="skill-badges">
+          <span class="badge">Windows 10/11</span>
+          <span class="badge">Windows Server</span>
+          <span class="badge">Linux/Ubuntu</span>
+          <span class="badge">macOS</span>
+          <!-- FILL: Keep only what you've actually used -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Networking</h3>
+        <div class="skill-badges">
+          <span class="badge">TCP/IP</span>
+          <span class="badge">DNS / DHCP</span>
+          <span class="badge">VLANs</span>
+          <span class="badge">VPN</span>
+          <span class="badge">Firewalls</span>
+          <!-- FILL: Add Cisco, Meraki, pfSense etc. if applicable -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Administration</h3>
+        <div class="skill-badges">
+          <span class="badge">Active Directory</span>
+          <span class="badge">Group Policy</span>
+          <span class="badge">O365 Admin</span>
+          <span class="badge">PowerShell</span>
+          <!-- FILL: Add MDM tools, backup solutions, etc. -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Support &amp; Tools</h3>
+        <div class="skill-badges">
+          <span class="badge">Helpdesk</span>
+          <span class="badge">ServiceNow</span>
+          <span class="badge">Jira</span>
+          <span class="badge">Remote Support</span>
+          <!-- FILL: Ticketing systems, remote tools (TeamViewer, AnyDesk), imaging tools -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Certifications</h3>
+        <div class="skill-badges">
+          <!-- FILL: Add any certifications you hold. If none yet, list ones you're pursuing. -->
+          <span class="badge fill-me">CompTIA A+</span>
+          <span class="badge fill-me">Network+</span>
+          <span class="badge fill-me">Cert Name</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="career-section" id="experience">
+    <h2 class="section-title">// EXPERIENCE</h2>
+    <!--
+      FILL: Each exp-card is one position. For IT roles, quantify impact where possible:
+      - "Resolved avg. 30 tickets/day with 95% first-call resolution rate"
+      - "Deployed and imaged 80+ workstations for office relocation"
+      - "Reduced password reset tickets 30% by implementing self-service portal"
+    -->
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company fill-me">COMPANY / ORG NAME</span>
+          <span class="exp-dates fill-me">Month YYYY – Month YYYY</span>
+        </div>
+        <div class="exp-role fill-me">IT Support Technician / Help Desk</div>
+        <ul class="exp-bullets">
+          <li class="fill-me">What you supported (hardware, software, users, scale).</li>
+          <li class="fill-me">System or process you improved — what changed, what the impact was.</li>
+          <li class="fill-me">Tools/systems you administered or maintained.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag fill-me">Windows Server</span>
+          <span class="tag fill-me">Active Directory</span>
+          <span class="tag fill-me">Tool</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company fill-me">COMPANY / SCHOOL / LAB</span>
+          <span class="exp-dates fill-me">Month YYYY – Month YYYY</span>
+        </div>
+        <div class="exp-role fill-me">Role Title</div>
+        <ul class="exp-bullets">
+          <li class="fill-me">Hardware repair, imaging, or deployment task at scale.</li>
+          <li class="fill-me">Network configuration or troubleshooting you performed.</li>
+          <li class="fill-me">Documentation or knowledge base you created.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag fill-me">Tool</span>
+          <span class="tag fill-me">Tool</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="career-section" id="projects">
+    <h2 class="section-title">// PROJECTS &amp; INITIATIVES</h2>
+    <!--
+      FILL: For IT, "projects" can include personal lab work, home lab setups,
+      automation scripts, network builds, documentation systems you created,
+      or process improvements. Include links to GitHub repos or write-ups where available.
+    -->
+    <div class="proj-grid">
+
+      <div class="proj-card">
+        <div class="proj-title fill-me">PROJECT / INITIATIVE NAME</div>
+        <p class="proj-desc fill-me">What you built or solved. For home lab: what you set up (hardware, OS, services) and what you learned. For work initiatives: the problem, your solution, the result.</p>
+        <div class="proj-tech">
+          <span class="tag fill-me">Tool / OS</span>
+          <span class="tag fill-me">Tech</span>
+        </div>
+        <div class="proj-links">
+          <!-- FILL: Link to GitHub, documentation, or write-up. Remove if not applicable. -->
+          <a href="#" class="proj-link">GitHub →</a>
+          <a href="#" class="proj-link">Write-up →</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-title fill-me">PROJECT NAME</div>
+        <p class="proj-desc fill-me">Home lab, automation script, network diagram, or IT initiative. Focus on what you configured, what it enabled, and what you learned.</p>
+        <div class="proj-tech">
+          <span class="tag fill-me">Tool</span>
+          <span class="tag fill-me">Tech</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-title fill-me">PROJECT NAME</div>
+        <p class="proj-desc fill-me">Describe a process improvement, automation, or self-study project relevant to IT. What problem did it solve?</p>
+        <div class="proj-tech">
+          <span class="tag fill-me">Tool</span>
+          <span class="tag fill-me">Tech</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="career-section" id="contact">
+    <h2 class="section-title">// CONTACT</h2>
+    <div class="contact-grid">
+      <!-- FILL: Replace all href values and display text -->
+      <a href="mailto:your@email.com" class="contact-card">
+        <span class="contact-icon">EMAIL</span>
+        <span class="contact-value fill-me">your@email.com</span>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-card">
+        <span class="contact-icon">LINKEDIN</span>
+        <span class="contact-value fill-me">linkedin.com/in/you</span>
+      </a>
+      <a href="https://github.com/yourgithub" target="_blank" class="contact-card">
+        <span class="contact-icon">GITHUB</span>
+        <span class="contact-value fill-me">github.com/you</span>
+      </a>
+    </div>
+    <div class="portfolio-links">
+      <a href="../index-pixel.html" class="portfolio-link">← FULL PORTFOLIO</a>
+      <a href="software.html"       class="portfolio-link">SOFTWARE</a>
+      <a href="it.html"             class="portfolio-link current">IT &amp; SUPPORT ✦</a>
+      <a href="av-design.html"      class="portfolio-link">AV DESIGN</a>
+      <a href="cloud-security.html" class="portfolio-link">CLOUD / SECURITY</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="career-footer">
+  <!-- FILL: Replace "YOUR NAME" and update year -->
+  EARTH KINGDOM · YOUR NAME · 2025
+</footer>
+
+</body>
+</html>

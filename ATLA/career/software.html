@@ -1,0 +1,429 @@
+<!doctype html>
+<!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║  SOFTWARE / FULL-STACK — Career Landing Page            ║
+  ║  Nation: AIR NOMADS  ·  Element: Air                    ║
+  ║                                                          ║
+  ║  HOW TO FILL THIS PAGE — search "FILL:" to find all     ║
+  ║  placeholders. Replace every bracketed field below.     ║
+  ║                                                          ║
+  ║  CHECKLIST:                                              ║
+  ║  [ ] hero-name — your full name                         ║
+  ║  [ ] hero-tagline — 1 sentence, software focus          ║
+  ║  [ ] Email / LinkedIn / GitHub / Resume links           ║
+  ║  [ ] About paragraphs (2–3 sentences each)              ║
+  ║  [ ] Skill badges — add/remove as needed                ║
+  ║  [ ] 2–4 Experience entries (company, role, dates,      ║
+  ║      bullets, tags)                                      ║
+  ║  [ ] 3–4 Project cards (title, desc, tech, links)       ║
+  ╚══════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- FILL: Update page title with your name -->
+  <title>Software Engineer — Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Software / Full-Stack Engineering portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="career.css" />
+  <style>
+    /* ── AIR NOMADS palette ── */
+    :root {
+      --c-bg:       #0d1520;
+      --c-card:     rgba(18, 30, 50, 0.92);
+      --c-border:   #4a82c0;
+      --c-accent:   #4a82c0;
+      --c-accent2:  #e8761a;
+      --c-badge-bg: rgba(30, 55, 100, 0.80);
+      --c-heading:  #8ac4ee;
+      --c-text:     #c4ddf4;
+      --c-grid:     rgba(74, 130, 192, 0.06);
+      --c-sep:      rgba(74, 130, 192, 0.25);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── Sticky navigation ── -->
+<nav class="career-nav" aria-label="Page navigation">
+  <a href="../index-pixel.html" class="nav-btn">← PORTFOLIO</a>
+  <span class="career-nav-title">AIR NOMADS · SOFTWARE ENGINEER</span>
+  <a href="#contact" class="nav-btn">CONTACT ↓</a>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════
+     HERO — Western Air Temple hanging cliffs
+══════════════════════════════════════════════════════ -->
+<header class="career-hero" id="hero">
+
+  <!-- Pixel art background: Air Nomads / Western Air Temple -->
+  <svg class="hero-scene" viewBox="0 0 1400 560"
+       shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg"
+       aria-hidden="true" preserveAspectRatio="xMidYMax slice">
+
+    <!-- ── SKY — stepped blue gradient ── -->
+    <rect x="0" y="0"   width="1400" height="90"  fill="#2a5890"/>
+    <rect x="0" y="90"  width="1400" height="90"  fill="#3a6ea8"/>
+    <rect x="0" y="180" width="1400" height="90"  fill="#4a88c0"/>
+    <rect x="0" y="270" width="1400" height="90"  fill="#62a0d0"/>
+    <rect x="0" y="360" width="1400" height="80"  fill="#7ab8dc"/>
+    <rect x="0" y="440" width="1400" height="120" fill="#92ccec"/>
+
+    <!-- ── CLOUDS ── -->
+    <rect x="80"  y="30"  width="120" height="20" fill="#c8e4f4" opacity="0.55"/>
+    <rect x="100" y="18"  width="80"  height="20" fill="#d8eefb" opacity="0.55"/>
+    <rect x="340" y="55"  width="160" height="18" fill="#c8e4f4" opacity="0.45"/>
+    <rect x="360" y="42"  width="100" height="18" fill="#d8eefb" opacity="0.45"/>
+    <rect x="900" y="25"  width="140" height="20" fill="#c8e4f4" opacity="0.5"/>
+    <rect x="920" y="14"  width="90"  height="18" fill="#d8eefb" opacity="0.5"/>
+    <rect x="1180" y="60" width="110" height="16" fill="#c8e4f4" opacity="0.4"/>
+
+    <!-- ── LEFT CLIFF ── -->
+    <rect x="0"   y="0"   width="180" height="560" fill="#3a2810"/>
+    <rect x="30"  y="0"   width="150" height="560" fill="#4a3418"/>
+    <rect x="0"   y="0"   width="30"  height="560" fill="#2a1808"/>
+    <!-- Cliff face detail -->
+    <rect x="50"  y="60"  width="40"  height="200" fill="#3a2810"/>
+    <rect x="100" y="100" width="30"  height="150" fill="#2e2008"/>
+    <rect x="130" y="80"  width="20"  height="160" fill="#3a2810"/>
+    <rect x="60"  y="300" width="80"  height="260" fill="#4a3818"/>
+    <!-- Undercut / overhang -->
+    <rect x="180" y="220" width="60"  height="340" fill="#2a1808" opacity="0.8"/>
+
+    <!-- ── RIGHT CLIFF ── -->
+    <rect x="1220" y="0"  width="180" height="560" fill="#3a2810"/>
+    <rect x="1220" y="0"  width="150" height="560" fill="#4a3418"/>
+    <rect x="1370" y="0"  width="30"  height="560" fill="#2a1808"/>
+    <!-- Cliff face detail -->
+    <rect x="1310" y="60"  width="40"  height="200" fill="#3a2810"/>
+    <rect x="1270" y="100" width="30"  height="150" fill="#2e2008"/>
+    <rect x="1250" y="80"  width="20"  height="160" fill="#3a2810"/>
+    <rect x="1260" y="300" width="80"  height="260" fill="#4a3818"/>
+    <rect x="1160" y="220" width="60"  height="340" fill="#2a1808" opacity="0.8"/>
+
+    <!-- ── HANGING TEMPLE PLATFORM ── -->
+    <rect x="500" y="300" width="400" height="20"  fill="#6a5030"/>
+    <rect x="520" y="288" width="360" height="14"  fill="#8a6840"/>
+    <rect x="540" y="278" width="320" height="12"  fill="#9a7848"/>
+    <!-- Platform underside details -->
+    <rect x="500" y="320" width="30"  height="80"  fill="#5a4028"/>
+    <rect x="550" y="320" width="30"  height="100" fill="#5a4028"/>
+    <rect x="610" y="320" width="30"  height="90"  fill="#5a4028"/>
+    <rect x="760" y="320" width="30"  height="90"  fill="#5a4028"/>
+    <rect x="820" y="320" width="30"  height="100" fill="#5a4028"/>
+    <rect x="870" y="320" width="30"  height="80"  fill="#5a4028"/>
+
+    <!-- ── TEMPLE STRUCTURES ON PLATFORM ── -->
+    <!-- Main temple building -->
+    <rect x="610" y="220" width="180" height="80"  fill="#c89840"/>
+    <rect x="610" y="220" width="180" height="12"  fill="#e8b850"/>
+    <!-- Upswept roof -->
+    <rect x="590" y="210" width="220" height="16"  fill="#d4a840"/>
+    <rect x="570" y="198" width="260" height="14"  fill="#e8b850"/>
+    <!-- Roof ridge -->
+    <rect x="680" y="188" width="40"  height="12"  fill="#c89020"/>
+    <!-- Columns -->
+    <rect x="620" y="232" width="16"  height="68"  fill="#b88020"/>
+    <rect x="660" y="232" width="16"  height="68"  fill="#b88020"/>
+    <rect x="720" y="232" width="16"  height="68"  fill="#b88020"/>
+    <rect x="760" y="232" width="16"  height="68"  fill="#b88020"/>
+    <!-- Side wings -->
+    <rect x="540" y="250" width="70"  height="50"  fill="#b88030"/>
+    <rect x="540" y="248" width="70"  height="10"  fill="#d0a040"/>
+    <rect x="790" y="250" width="70"  height="50"  fill="#b88030"/>
+    <rect x="790" y="248" width="70"  height="10"  fill="#d0a040"/>
+
+    <!-- ── HANGING CHAINS / CABLES from cliffs ── -->
+    <!-- Left cable -->
+    <rect x="170" y="290" width="8"   height="16"  fill="#7a6040"/>
+    <rect x="210" y="296" width="8"   height="16"  fill="#7a6040"/>
+    <rect x="250" y="296" width="8"   height="12"  fill="#7a6040"/>
+    <rect x="300" y="294" width="8"   height="10"  fill="#7a6040"/>
+    <rect x="350" y="292" width="8"   height="10"  fill="#7a6040"/>
+    <rect x="400" y="294" width="8"   height="10"  fill="#7a6040"/>
+    <rect x="450" y="296" width="8"   height="12"  fill="#7a6040"/>
+    <rect x="500" y="300" width="8"   height="14"  fill="#7a6040"/>
+    <!-- Right cable -->
+    <rect x="900" y="300" width="8"   height="14"  fill="#7a6040"/>
+    <rect x="950" y="296" width="8"   height="12"  fill="#7a6040"/>
+    <rect x="1000" y="294" width="8"  height="10"  fill="#7a6040"/>
+    <rect x="1050" y="292" width="8"  height="10"  fill="#7a6040"/>
+    <rect x="1100" y="294" width="8"  height="10"  fill="#7a6040"/>
+    <rect x="1150" y="296" width="8"  height="12"  fill="#7a6040"/>
+    <rect x="1190" y="296" width="8"  height="16"  fill="#7a6040"/>
+    <rect x="1225" y="290" width="8"  height="16"  fill="#7a6040"/>
+
+    <!-- ── AIR WISPS / WIND ── -->
+    <rect x="220" y="170" width="60"  height="6"   fill="#c8e8f8" opacity="0.55"/>
+    <rect x="240" y="182" width="40"  height="4"   fill="#d8f0ff" opacity="0.5"/>
+    <rect x="1100" y="155" width="60" height="6"   fill="#c8e8f8" opacity="0.5"/>
+    <rect x="1080" y="168" width="40" height="4"   fill="#d8f0ff" opacity="0.45"/>
+    <rect x="600"  y="120" width="50" height="5"   fill="#c8e8f8" opacity="0.4"/>
+    <rect x="750"  y="140" width="50" height="5"   fill="#d8f0ff" opacity="0.35"/>
+
+    <!-- ── ABYSS / VOID BELOW ── -->
+    <rect x="180" y="440" width="1040" height="120" fill="#1a2a3a" opacity="0.7"/>
+    <rect x="240" y="480" width="920"  height="80"  fill="#0a1a2a" opacity="0.8"/>
+
+    <!-- Fog wisps across the abyss -->
+    <rect x="200" y="450" width="200" height="20" fill="#b0d0e8" opacity="0.12"/>
+    <rect x="600" y="460" width="200" height="16" fill="#b0d0e8" opacity="0.10"/>
+    <rect x="1000" y="450" width="180" height="20" fill="#b0d0e8" opacity="0.12"/>
+  </svg>
+
+  <!-- Hero text overlay -->
+  <div class="hero-content">
+    <span class="nation-badge">AIR NOMADS · AIRBENDER</span>
+    <!-- FILL: Replace "YOUR NAME" with your actual name -->
+    <h1 class="hero-name">YOUR NAME</h1>
+    <p class="hero-track">SOFTWARE ENGINEER · FULL-STACK DEVELOPER</p>
+    <!-- FILL: Replace with your own 1-sentence tagline for software roles -->
+    <p class="hero-tagline fill-me">1-sentence tagline — e.g. "I build fast, accessible web apps from database to UI."</p>
+    <div class="hero-ctas">
+      <!-- FILL: Update href with your actual email -->
+      <a href="mailto:your@email.com" class="cta-btn cta-primary">SEND MESSAGE</a>
+      <!-- FILL: Update href to your resume PDF path -->
+      <a href="../resume.pdf" target="_blank" class="cta-btn cta-secondary">VIEW RESUME</a>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════════════
+     MAIN CONTENT
+══════════════════════════════════════════════════════ -->
+<main class="career-main">
+
+  <!-- ── ABOUT ── -->
+  <section class="career-section" id="about">
+    <h2 class="section-title">// ABOUT</h2>
+    <div class="about-card">
+      <!--
+        FILL: Write 2–3 sentences about yourself from a software engineering perspective.
+        Focus on: what languages/frameworks you work in, type of problems you like to solve,
+        and what kind of teams/projects excite you.
+        Example: "I'm a CS student specializing in full-stack web development with a focus
+        on building performant, accessible applications. I'm experienced in React and Node.js,
+        and I enjoy bridging the gap between clean UI and efficient backend systems."
+      -->
+      <p class="fill-me">ABOUT PARAGRAPH 1: Your software engineering background, preferred stack, and what kinds of problems you love solving. Keep it to 2–3 sentences.</p>
+      <p class="fill-me">ABOUT PARAGRAPH 2 (optional): A sentence about what you're currently learning, a project you're excited about, or your engineering philosophy.</p>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="career-section" id="skills">
+    <h2 class="section-title">// SKILLS &amp; TOOLS</h2>
+    <!--
+      FILL: Add/remove badges within each category. You can also add/remove entire
+      skill-category blocks to match your actual skill set.
+    -->
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <h3>Languages</h3>
+        <div class="skill-badges">
+          <span class="badge">JavaScript</span>
+          <span class="badge">TypeScript</span>
+          <span class="badge">Python</span>
+          <span class="badge">Java</span>
+          <span class="badge">SQL</span>
+          <!-- FILL: Add or remove languages -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Frontend</h3>
+        <div class="skill-badges">
+          <span class="badge">React</span>
+          <span class="badge">Next.js</span>
+          <span class="badge">HTML/CSS</span>
+          <span class="badge">Tailwind</span>
+          <!-- FILL: Add or remove frontend tools -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Backend</h3>
+        <div class="skill-badges">
+          <span class="badge">Node.js</span>
+          <span class="badge">Express</span>
+          <span class="badge">REST APIs</span>
+          <span class="badge">PostgreSQL</span>
+          <span class="badge">MongoDB</span>
+          <!-- FILL: Add or remove backend tools -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>DevOps &amp; Tools</h3>
+        <div class="skill-badges">
+          <span class="badge">Git</span>
+          <span class="badge">Docker</span>
+          <span class="badge">GitHub Actions</span>
+          <span class="badge">Linux</span>
+          <!-- FILL: Add CI/CD, cloud platforms, testing tools you know -->
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="career-section" id="experience">
+    <h2 class="section-title">// EXPERIENCE</h2>
+    <!--
+      FILL: Duplicate the .exp-card block for each job/internship.
+      Order: most recent first. Aim for 2–4 entries.
+      For bullets: use action verb + what you did + quantified result where possible.
+      Example bullet: "Reduced API response time by 40% by implementing Redis caching."
+    -->
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <!-- FILL: Company name -->
+          <span class="exp-company fill-me">COMPANY NAME</span>
+          <!-- FILL: Dates, e.g. "May 2024 – Aug 2024" -->
+          <span class="exp-dates fill-me">Month YYYY – Month YYYY</span>
+        </div>
+        <!-- FILL: Your job title -->
+        <div class="exp-role fill-me">Software Engineering Intern</div>
+        <ul class="exp-bullets">
+          <!-- FILL: 3–4 bullet points. Lead with an action verb. Quantify where possible. -->
+          <li class="fill-me">Action verb + what you built/improved + impact (e.g. "Reduced load time by X%").</li>
+          <li class="fill-me">Another accomplishment — what technology, what outcome.</li>
+          <li class="fill-me">Third bullet — collaboration, scale, or tooling contribution.</li>
+        </ul>
+        <div class="exp-tags">
+          <!-- FILL: Technologies used in this role -->
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag fill-me">Tech Used</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company fill-me">COMPANY / LAB NAME</span>
+          <span class="exp-dates fill-me">Month YYYY – Month YYYY</span>
+        </div>
+        <div class="exp-role fill-me">Role Title</div>
+        <ul class="exp-bullets">
+          <li class="fill-me">What you built, researched, or automated.</li>
+          <li class="fill-me">Collaboration, code review, or process improvement.</li>
+          <li class="fill-me">Technical outcome — test coverage, performance, feature shipped.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag fill-me">Tech</span>
+          <span class="tag fill-me">Tech</span>
+        </div>
+      </div>
+
+      <!-- FILL: Add a third card if you have more experience -->
+
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="career-section" id="projects">
+    <h2 class="section-title">// PROJECTS</h2>
+    <!--
+      FILL: 3–4 projects relevant to software/full-stack roles.
+      Best picks: web apps, APIs, CLIs, tools you built from scratch.
+      Include GitHub and/or live demo links where available.
+    -->
+    <div class="proj-grid">
+
+      <div class="proj-card">
+        <!-- FILL: Project name in ALL CAPS or Title Case -->
+        <div class="proj-title fill-me">PROJECT NAME</div>
+        <!--
+          FILL: 2–3 sentences. What problem does it solve? What did you build?
+          Who uses it or what was the outcome?
+        -->
+        <p class="proj-desc fill-me">2–3 sentence description: what the project does, what stack you used, and what you learned or delivered.</p>
+        <div class="proj-tech">
+          <!-- FILL: Technologies/languages used -->
+          <span class="tag fill-me">Tech</span>
+          <span class="tag fill-me">Tech</span>
+          <span class="tag fill-me">Tech</span>
+        </div>
+        <div class="proj-links">
+          <!-- FILL: Update href to your GitHub repo URL -->
+          <a href="#" class="proj-link">GitHub →</a>
+          <!-- FILL: Update href to live demo, or remove if not deployed -->
+          <a href="#" class="proj-link">Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-title fill-me">PROJECT NAME</div>
+        <p class="proj-desc fill-me">What this project does, the challenge it solves, and what you're proud of technically.</p>
+        <div class="proj-tech">
+          <span class="tag fill-me">Tech</span>
+          <span class="tag fill-me">Tech</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">GitHub →</a>
+          <a href="#" class="proj-link">Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-title fill-me">PROJECT NAME</div>
+        <p class="proj-desc fill-me">Description focusing on scale, complexity, or interesting technical decisions you made.</p>
+        <div class="proj-tech">
+          <span class="tag fill-me">Tech</span>
+          <span class="tag fill-me">Tech</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
+      <!-- FILL: Add a fourth project card if desired -->
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="career-section" id="contact">
+    <h2 class="section-title">// CONTACT</h2>
+    <div class="contact-grid">
+      <!-- FILL: Replace all href values and display text with your real contact info -->
+      <a href="mailto:your@email.com" class="contact-card">
+        <span class="contact-icon">EMAIL</span>
+        <span class="contact-value fill-me">your@email.com</span>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-card">
+        <span class="contact-icon">LINKEDIN</span>
+        <span class="contact-value fill-me">linkedin.com/in/you</span>
+      </a>
+      <a href="https://github.com/yourgithub" target="_blank" class="contact-card">
+        <span class="contact-icon">GITHUB</span>
+        <span class="contact-value fill-me">github.com/you</span>
+      </a>
+    </div>
+
+    <!-- Links to other career tracks + main portfolio -->
+    <div class="portfolio-links">
+      <a href="../index-pixel.html" class="portfolio-link">← FULL PORTFOLIO</a>
+      <a href="software.html"       class="portfolio-link current">SOFTWARE ✦</a>
+      <a href="it.html"             class="portfolio-link">IT &amp; SUPPORT</a>
+      <a href="av-design.html"      class="portfolio-link">AV DESIGN</a>
+      <a href="cloud-security.html" class="portfolio-link">CLOUD / SECURITY</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="career-footer">
+  <!-- FILL: Replace "YOUR NAME" and update the year -->
+  AIR NOMADS · YOUR NAME · 2025
+</footer>
+
+</body>
+</html>

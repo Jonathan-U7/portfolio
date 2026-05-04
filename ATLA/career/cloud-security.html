@@ -1,0 +1,441 @@
+<!doctype html>
+<!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║  CLOUD / SECURITY — Career Landing Page                 ║
+  ║  Nation: FIRE NATION  ·  Element: Fire                  ║
+  ║                                                          ║
+  ║  HOW TO FILL THIS PAGE — search "FILL:" to find all     ║
+  ║  placeholders. Replace every bracketed field below.     ║
+  ║                                                          ║
+  ║  CHECKLIST:                                              ║
+  ║  [ ] hero-name — your full name                         ║
+  ║  [ ] hero-tagline — 1 sentence, cloud/security focus    ║
+  ║  [ ] Email / LinkedIn / GitHub / Resume links           ║
+  ║  [ ] About paragraphs (2–3 sentences each)              ║
+  ║  [ ] Skill badges — platforms, certs, tools             ║
+  ║  [ ] 2–4 Experience entries                             ║
+  ║  [ ] 3–4 Project cards (labs, CTFs, deployments)        ║
+  ╚══════════════════════════════════════════════════════════╝
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!-- FILL: Update page title with your name -->
+  <title>Cloud &amp; Security — Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Cloud Infrastructure and Cybersecurity portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="career.css" />
+  <style>
+    /* ── FIRE NATION palette ── */
+    :root {
+      --c-bg:       #080202;
+      --c-card:     rgba(20, 6, 4, 0.94);
+      --c-border:   #8a4808;
+      --c-accent:   #c89020;
+      --c-accent2:  #f4820a;
+      --c-badge-bg: rgba(50, 14, 4, 0.88);
+      --c-heading:  #f0b840;
+      --c-text:     #e8c890;
+      --c-grid:     rgba(200, 144, 32, 0.05);
+      --c-sep:      rgba(138, 72, 8, 0.30);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="career-nav" aria-label="Page navigation">
+  <a href="../index-pixel.html" class="nav-btn">← PORTFOLIO</a>
+  <span class="career-nav-title">FIRE NATION · CLOUD / SECURITY</span>
+  <a href="#contact" class="nav-btn">CONTACT ↓</a>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════
+     HERO — Fire Nation volcanic temple at dusk
+══════════════════════════════════════════════════════ -->
+<header class="career-hero" id="hero">
+
+  <svg class="hero-scene" viewBox="0 0 1400 560"
+       shape-rendering="crispEdges" xmlns="http://www.w3.org/2000/svg"
+       aria-hidden="true" preserveAspectRatio="xMidYMax slice">
+
+    <!-- ── SKY — dark crimson to blood orange ── -->
+    <rect x="0" y="0"   width="1400" height="70"  fill="#080202"/>
+    <rect x="0" y="70"  width="1400" height="70"  fill="#100404"/>
+    <rect x="0" y="140" width="1400" height="70"  fill="#1c0606"/>
+    <rect x="0" y="210" width="1400" height="70"  fill="#280808"/>
+    <rect x="0" y="280" width="1400" height="70"  fill="#341008"/>
+    <rect x="0" y="350" width="1400" height="60"  fill="#401408"/>
+    <rect x="0" y="410" width="1400" height="60"  fill="#4c1808"/>
+    <rect x="0" y="470" width="1400" height="90"  fill="#381008"/>
+
+    <!-- ── ASH CLOUDS ── -->
+    <rect x="0"   y="60"  width="200" height="28"  fill="#281006" opacity="0.7"/>
+    <rect x="30"  y="46"  width="160" height="22"  fill="#301208" opacity="0.65"/>
+    <rect x="180" y="72"  width="180" height="24"  fill="#281006" opacity="0.60"/>
+    <rect x="350" y="50"  width="220" height="30"  fill="#301208" opacity="0.65"/>
+    <rect x="380" y="36"  width="160" height="22"  fill="#381408" opacity="0.55"/>
+    <rect x="600" y="40"  width="200" height="28"  fill="#281006" opacity="0.60"/>
+    <rect x="620" y="26"  width="140" height="20"  fill="#301208" opacity="0.50"/>
+    <rect x="820" y="55"  width="180" height="26"  fill="#281006" opacity="0.65"/>
+    <rect x="850" y="40"  width="140" height="20"  fill="#381408" opacity="0.55"/>
+    <rect x="1020" y="48" width="200" height="30"  fill="#301208" opacity="0.60"/>
+    <rect x="1060" y="32" width="160" height="22"  fill="#281006" opacity="0.52"/>
+    <rect x="1230" y="60" width="170" height="26"  fill="#301208" opacity="0.62"/>
+
+    <!-- ── LAVA GLOW on horizon ── -->
+    <rect x="0"   y="450" width="1400" height="20" fill="#8a1c04" opacity="0.5"/>
+    <rect x="0"   y="460" width="1400" height="20" fill="#aa2806" opacity="0.45"/>
+    <rect x="0"   y="470" width="1400" height="15" fill="#c84008" opacity="0.4"/>
+    <rect x="300" y="455" width="800"  height="10" fill="#f4820a" opacity="0.25"/>
+    <rect x="500" y="462" width="400"  height="8"  fill="#fcd840" opacity="0.12"/>
+
+    <!-- ── VOLCANO (center) ── -->
+    <!-- Volcano base -->
+    <rect x="540" y="180" width="320" height="300" fill="#200808"/>
+    <!-- Stepped volcano profile (left slope) -->
+    <rect x="500" y="220" width="40"  height="260" fill="#1a0606"/>
+    <rect x="460" y="260" width="40"  height="220" fill="#180606"/>
+    <rect x="420" y="300" width="40"  height="180" fill="#160404"/>
+    <rect x="380" y="340" width="40"  height="140" fill="#140404"/>
+    <rect x="340" y="380" width="40"  height="100" fill="#120202"/>
+    <!-- Stepped volcano profile (right slope) -->
+    <rect x="860" y="220" width="40"  height="260" fill="#1a0606"/>
+    <rect x="900" y="260" width="40"  height="220" fill="#180606"/>
+    <rect x="940" y="300" width="40"  height="180" fill="#160404"/>
+    <rect x="980" y="340" width="40"  height="140" fill="#140404"/>
+    <rect x="1020" y="380" width="40" height="100" fill="#120202"/>
+    <!-- Volcano peak -->
+    <rect x="620" y="140" width="160" height="44"  fill="#200808"/>
+    <rect x="640" y="120" width="120" height="24"  fill="#1a0606"/>
+    <rect x="660" y="102" width="80"  height="22"  fill="#160404"/>
+    <rect x="680" y="88"  width="40"  height="16"  fill="#120202"/>
+    <!-- Crater glow -->
+    <rect x="668" y="92"  width="64"  height="12"  fill="#f4820a" opacity="0.55"/>
+    <rect x="676" y="96"  width="48"  height="8"   fill="#fcd840" opacity="0.40"/>
+    <rect x="684" y="100" width="32"  height="6"   fill="white"   opacity="0.20"/>
+    <!-- Lava channel down the side -->
+    <rect x="690" y="140" width="20"  height="60"  fill="#c84008" opacity="0.7"/>
+    <rect x="692" y="140" width="16"  height="60"  fill="#f4820a" opacity="0.5"/>
+    <rect x="694" y="180" width="12"  height="40"  fill="#fca030" opacity="0.4"/>
+
+    <!-- ── FIRE NATION TEMPLE on volcanic platform ── -->
+    <!-- Platform -->
+    <rect x="460" y="390" width="480" height="30"  fill="#3a1808"/>
+    <rect x="440" y="382" width="520" height="12"  fill="#4a2010"/>
+    <rect x="420" y="374" width="560" height="12"  fill="#5a2818"/>
+    <!-- Platform steps -->
+    <rect x="440" y="416" width="520" height="12"  fill="#2a1006"/>
+    <rect x="450" y="424" width="500" height="12"  fill="#200c04"/>
+    <!-- Main temple building -->
+    <rect x="540" y="300" width="320" height="90"  fill="#2a1008"/>
+    <!-- Temple roof (upswept) -->
+    <rect x="520" y="286" width="360" height="18"  fill="#c89020"/>
+    <rect x="500" y="272" width="400" height="16"  fill="#d4a028"/>
+    <rect x="480" y="258" width="440" height="16"  fill="#c89020"/>
+    <!-- Roof ridge ornament -->
+    <rect x="680" y="244" width="40"  height="16"  fill="#e8b830"/>
+    <rect x="690" y="234" width="20"  height="12"  fill="#fcd840"/>
+    <!-- Temple columns -->
+    <rect x="555" y="310" width="16"  height="80"  fill="#1a0808"/>
+    <rect x="600" y="310" width="16"  height="80"  fill="#1a0808"/>
+    <rect x="690" y="310" width="16"  height="80"  fill="#1a0808"/>
+    <rect x="780" y="310" width="16"  height="80"  fill="#1a0808"/>
+    <rect x="830" y="310" width="16"  height="80"  fill="#1a0808"/>
+    <!-- Column gold details -->
+    <rect x="555" y="310" width="16"  height="6"   fill="#c89020"/>
+    <rect x="600" y="310" width="16"  height="6"   fill="#c89020"/>
+    <rect x="690" y="310" width="16"  height="6"   fill="#c89020"/>
+    <rect x="780" y="310" width="16"  height="6"   fill="#c89020"/>
+    <rect x="830" y="310" width="16"  height="6"   fill="#c89020"/>
+    <!-- Side wings -->
+    <rect x="460" y="328" width="80"  height="62"  fill="#240e06"/>
+    <rect x="460" y="325" width="80"  height="10"  fill="#b88018"/>
+    <rect x="860" y="328" width="80"  height="62"  fill="#240e06"/>
+    <rect x="860" y="325" width="80"  height="10"  fill="#b88018"/>
+    <!-- Fire torches on temple corners -->
+    <rect x="542" y="276" width="10"  height="30"  fill="#3a1808"/>
+    <rect x="542" y="260" width="10"  height="18"  fill="#f4820a" opacity="0.9"/>
+    <rect x="544" y="254" width="6"   height="8"   fill="#fcd840" opacity="0.8"/>
+    <rect x="848" y="276" width="10"  height="30"  fill="#3a1808"/>
+    <rect x="848" y="260" width="10"  height="18"  fill="#f4820a" opacity="0.9"/>
+    <rect x="850" y="254" width="6"   height="8"   fill="#fcd840" opacity="0.8"/>
+
+    <!-- ── EMBER SPARKS — floating ash particles ── -->
+    <rect x="680" y="80"  width="4" height="4"  fill="#f4820a" opacity="0.75"/>
+    <rect x="710" y="65"  width="4" height="4"  fill="#fcd840" opacity="0.65"/>
+    <rect x="660" y="72"  width="4" height="4"  fill="#e06008" opacity="0.60"/>
+    <rect x="730" y="90"  width="4" height="4"  fill="#f4820a" opacity="0.55"/>
+    <rect x="648" y="60"  width="4" height="4"  fill="#fcd840" opacity="0.50"/>
+    <rect x="740" y="74"  width="4" height="4"  fill="#f4820a" opacity="0.45"/>
+    <rect x="600" y="100" width="4" height="4"  fill="#e06008" opacity="0.40"/>
+    <rect x="800" y="85"  width="4" height="4"  fill="#f4820a" opacity="0.45"/>
+    <rect x="760" y="106" width="4" height="4"  fill="#fcd840" opacity="0.35"/>
+    <rect x="820" y="68"  width="4" height="4"  fill="#e06008" opacity="0.40"/>
+    <!-- Small ash -->
+    <rect x="550" y="130" width="3" height="3"  fill="#c84008" opacity="0.5"/>
+    <rect x="840" y="118" width="3" height="3"  fill="#c84008" opacity="0.4"/>
+    <rect x="480" y="155" width="3" height="3"  fill="#c84008" opacity="0.35"/>
+    <rect x="920" y="142" width="3" height="3"  fill="#c84008" opacity="0.4"/>
+
+    <!-- ── SEA OF LAVA below ── -->
+    <rect x="0"   y="490" width="1400" height="70" fill="#200808"/>
+    <rect x="0"   y="510" width="1400" height="50" fill="#2a0c08"/>
+    <!-- Lava flow veins -->
+    <rect x="50"  y="500" width="80"  height="8"   fill="#c84008" opacity="0.5"/>
+    <rect x="200" y="510" width="100" height="6"   fill="#f4820a" opacity="0.35"/>
+    <rect x="450" y="505" width="120" height="8"   fill="#c84008" opacity="0.45"/>
+    <rect x="680" y="498" width="80"  height="10"  fill="#f4820a" opacity="0.40"/>
+    <rect x="900" y="508" width="100" height="6"   fill="#c84008" opacity="0.40"/>
+    <rect x="1150" y="502" width="90" height="8"   fill="#f4820a" opacity="0.35"/>
+    <rect x="1300" y="510" width="70" height="6"   fill="#c84008" opacity="0.40"/>
+
+  </svg>
+
+  <div class="hero-content">
+    <span class="nation-badge">FIRE NATION · FIREBENDER</span>
+    <!-- FILL: Replace "YOUR NAME" with your actual name -->
+    <h1 class="hero-name">YOUR NAME</h1>
+    <p class="hero-track">CLOUD INFRASTRUCTURE · CYBERSECURITY · DEVOPS</p>
+    <!-- FILL: Replace with your own tagline for cloud/security roles -->
+    <p class="hero-tagline fill-me">1-sentence tagline — e.g. "I design resilient cloud architectures and harden systems before attackers find the gaps."</p>
+    <div class="hero-ctas">
+      <!-- FILL: Update href with your email -->
+      <a href="mailto:your@email.com" class="cta-btn cta-primary">SEND MESSAGE</a>
+      <!-- FILL: Update href to your resume PDF -->
+      <a href="../resume.pdf" target="_blank" class="cta-btn cta-secondary">VIEW RESUME</a>
+    </div>
+  </div>
+</header>
+
+<main class="career-main">
+
+  <!-- ── ABOUT ── -->
+  <section class="career-section" id="about">
+    <h2 class="section-title">// ABOUT</h2>
+    <div class="about-card">
+      <!--
+        FILL: Write 2–3 sentences about yourself from a cloud/security perspective.
+        Focus on: cloud platforms you work with, security domains you specialize in,
+        certifications you hold or are pursuing, and the problems you like to solve.
+        Example: "I'm a CS student focused on cloud infrastructure and application security.
+        I work across AWS and Azure and have hands-on experience with SIEM tooling,
+        IAM hardening, and container security in Kubernetes environments."
+      -->
+      <p class="fill-me">ABOUT PARAGRAPH 1: Your cloud/security background — platforms, focus areas, and what types of problems energize you. 2–3 sentences.</p>
+      <p class="fill-me">ABOUT PARAGRAPH 2 (optional): Certifications you hold or are pursuing, security competitions (CTF) you've participated in, or your cloud/security philosophy.</p>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="career-section" id="skills">
+    <h2 class="section-title">// SKILLS &amp; TOOLS</h2>
+    <!--
+      FILL: Keep only the platforms and tools you've actually used.
+      Add certifications as their own category.
+    -->
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <h3>Cloud Platforms</h3>
+        <div class="skill-badges">
+          <span class="badge">AWS</span>
+          <span class="badge">Azure</span>
+          <span class="badge">GCP</span>
+          <!-- FILL: Add specific services — EC2, S3, Lambda, IAM, etc. -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Infrastructure &amp; DevOps</h3>
+        <div class="skill-badges">
+          <span class="badge">Terraform</span>
+          <span class="badge">Docker</span>
+          <span class="badge">Kubernetes</span>
+          <span class="badge">CI/CD</span>
+          <span class="badge">Linux</span>
+          <!-- FILL: Add Ansible, Helm, GitHub Actions, etc. -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Security</h3>
+        <div class="skill-badges">
+          <span class="badge">Network Security</span>
+          <span class="badge">SIEM</span>
+          <span class="badge">IAM</span>
+          <span class="badge">Pen Testing</span>
+          <span class="badge">Incident Response</span>
+          <!-- FILL: Add Splunk, Wireshark, Metasploit, Nmap, Burp Suite etc. -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Languages &amp; Scripting</h3>
+        <div class="skill-badges">
+          <span class="badge">Python</span>
+          <span class="badge">Bash</span>
+          <span class="badge">PowerShell</span>
+          <!-- FILL: Add Go, Ruby, SQL, etc. if relevant -->
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3>Certifications</h3>
+        <div class="skill-badges">
+          <!-- FILL: List certs you hold. Pursuing = add "(in progress)" after the name. -->
+          <span class="badge fill-me">CompTIA Security+</span>
+          <span class="badge fill-me">AWS Solutions Architect</span>
+          <span class="badge fill-me">Cert Name</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section class="career-section" id="experience">
+    <h2 class="section-title">// EXPERIENCE</h2>
+    <!--
+      FILL: Cloud/security experience. Include internships, research labs, CTF teams,
+      cloud consulting, or security operations. Quantify where possible:
+      - "Deployed infrastructure for a 3-tier web app serving 10K+ daily users on AWS."
+      - "Identified and remediated 12 critical CVEs during internal security audit."
+      - "Reduced cloud spend by 25% through right-sizing EC2 instances and S3 lifecycle rules."
+    -->
+    <div class="exp-grid">
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company fill-me">COMPANY / LAB / ORG</span>
+          <span class="exp-dates fill-me">Month YYYY – Month YYYY</span>
+        </div>
+        <div class="exp-role fill-me">Cloud / Security Engineer / Intern</div>
+        <ul class="exp-bullets">
+          <li class="fill-me">What cloud services or infrastructure you built or maintained.</li>
+          <li class="fill-me">Security measure, audit, or vulnerability you addressed.</li>
+          <li class="fill-me">Automation, IaC, or monitoring you implemented and its impact.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag fill-me">AWS</span>
+          <span class="tag fill-me">Terraform</span>
+          <span class="tag fill-me">Tool</span>
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-header">
+          <span class="exp-company fill-me">COMPANY / RESEARCH LAB</span>
+          <span class="exp-dates fill-me">Month YYYY – Month YYYY</span>
+        </div>
+        <div class="exp-role fill-me">Role Title</div>
+        <ul class="exp-bullets">
+          <li class="fill-me">Infrastructure, security, or compliance work you performed.</li>
+          <li class="fill-me">Tool or process you introduced — what problem it solved.</li>
+          <li class="fill-me">Team collaboration or stakeholder-facing aspect of your work.</li>
+        </ul>
+        <div class="exp-tags">
+          <span class="tag fill-me">Tool</span>
+          <span class="tag fill-me">Platform</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="career-section" id="projects">
+    <h2 class="section-title">// PROJECTS &amp; LABS</h2>
+    <!--
+      FILL: Cloud/security projects — great options include:
+      - Home lab (self-hosted services, network segmentation, SIEM setup)
+      - CTF competition writeups (link to write-ups on GitHub)
+      - Terraform/IaC modules you've published
+      - Vulnerability research or CVE analysis
+      - Cloud architecture you deployed end-to-end
+    -->
+    <div class="proj-grid">
+
+      <div class="proj-card">
+        <div class="proj-title fill-me">PROJECT / LAB NAME</div>
+        <!--
+          FILL: What you built, the technical decisions you made, and what you learned
+          or achieved. For CTF writeups: challenge name, category, and your approach.
+        -->
+        <p class="proj-desc fill-me">What you built or researched: cloud services used, security controls implemented, architecture decisions, and the outcome or what it demonstrates.</p>
+        <div class="proj-tech">
+          <span class="tag fill-me">AWS/Azure/GCP</span>
+          <span class="tag fill-me">Tool</span>
+        </div>
+        <div class="proj-links">
+          <!-- FILL: GitHub, blog post, CTF writeup, or architecture diagram -->
+          <a href="#" class="proj-link">GitHub →</a>
+          <a href="#" class="proj-link">Write-up →</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-title fill-me">PROJECT / CTF / LAB</div>
+        <p class="proj-desc fill-me">Technical description — what you configured, what attack/defense scenario you explored, or what infrastructure you automated.</p>
+        <div class="proj-tech">
+          <span class="tag fill-me">Tool</span>
+          <span class="tag fill-me">Platform</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-title fill-me">PROJECT NAME</div>
+        <p class="proj-desc fill-me">Security audit, penetration test, or cloud hardening project. Focus on what you discovered, what you fixed, and what you learned.</p>
+        <div class="proj-tech">
+          <span class="tag fill-me">Tool</span>
+          <span class="tag fill-me">Tech</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">Write-up →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="career-section" id="contact">
+    <h2 class="section-title">// CONTACT</h2>
+    <div class="contact-grid">
+      <!-- FILL: Update all contact hrefs and display values -->
+      <a href="mailto:your@email.com" class="contact-card">
+        <span class="contact-icon">EMAIL</span>
+        <span class="contact-value fill-me">your@email.com</span>
+      </a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank" class="contact-card">
+        <span class="contact-icon">LINKEDIN</span>
+        <span class="contact-value fill-me">linkedin.com/in/you</span>
+      </a>
+      <a href="https://github.com/yourgithub" target="_blank" class="contact-card">
+        <span class="contact-icon">GITHUB</span>
+        <span class="contact-value fill-me">github.com/you</span>
+      </a>
+    </div>
+    <div class="portfolio-links">
+      <a href="../index-pixel.html" class="portfolio-link">← FULL PORTFOLIO</a>
+      <a href="software.html"       class="portfolio-link">SOFTWARE</a>
+      <a href="it.html"             class="portfolio-link">IT &amp; SUPPORT</a>
+      <a href="av-design.html"      class="portfolio-link">AV DESIGN</a>
+      <a href="cloud-security.html" class="portfolio-link current">CLOUD / SECURITY ✦</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="career-footer">
+  <!-- FILL: Replace "YOUR NAME" and update year -->
+  FIRE NATION · YOUR NAME · 2025
+</footer>
+
+</body>
+</html>

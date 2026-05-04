@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Computer Science student portfolio" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- JJK × P5 INTRO PANEL SEQUENCE -->
+  <div class="jjk-intro" id="jjkIntro" aria-hidden="true">
+    <div class="jp-panel jp-panel--void"></div>
+    <div class="jp-panel jp-panel--cursed"></div>
+    <div class="jp-panel jp-panel--black"></div>
+    <div class="jp-flash"></div>
+    <div class="jp-title">
+      <span class="jp-kanji">無量空処</span>
+      <span class="jp-romaji">DOMAIN EXPANSION</span>
+    </div>
+  </div>
+
+  <!-- Screen flash for section transitions -->
+  <div class="screen-flash" id="screenFlash" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor-outer" id="cursorOuter"></div>
+  <div class="cursor-inner" id="cursorInner"></div>
+
+  <!-- Canvas for cursed energy particles -->
+  <canvas id="curseCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-brand">
+      <span class="nav-kanji">呪術</span>
+      <span class="nav-name">YOUR_NAME</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" class="nav-link" data-text="ABOUT">ABOUT</a></li>
+      <li><a href="#techniques" class="nav-link" data-text="SKILLS">SKILLS</a></li>
+      <li><a href="#projects" class="nav-link" data-text="PROJECTS">PROJECTS</a></li>
+      <li><a href="#experience" class="nav-link" data-text="EXPERIENCE">EXPERIENCE</a></li>
+      <li><a href="#contact" class="nav-link" data-text="CONTACT">CONTACT</a></li>
+      <li><a href="resume.pdf" target="_blank" class="nav-link resume-btn">RESUME</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO — Domain Expansion -->
+  <section class="hero" id="hero">
+    <div class="section-wipe" aria-hidden="true"></div>
+    <div class="screen-label screen-label--hero">DOMAIN EXPANSION // ACTIVE</div>
+    <div class="hero-diagonal-panel" aria-hidden="true"></div>
+    <div class="hero-bg-text">呪術廻戦</div>
+    <div class="domain-ring"></div>
+    <div class="domain-ring domain-ring--2"></div>
+    <div class="domain-ring domain-ring--3"></div>
+
+    <canvas class="speed-lines-canvas" id="speedLinesCanvas" aria-hidden="true"></canvas>
+    <div class="hero-corner-mark hero-corner-mark--tl">JJK // CS SORCERER</div>
+    <div class="hero-corner-mark hero-corner-mark--tr">呪術師 // GRADE-1</div>
+    <div class="hero-corner-mark hero-corner-mark--bl">CURSED ENERGY DETECTED</div>
+    <div class="hero-corner-mark hero-corner-mark--br">∞ OUTPUT</div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-line"></span>
+        <span class="eyebrow-text">DOMAIN EXPANSION</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-name" id="heroName">
+        <span class="name-line">YOUR</span>
+        <span class="name-line name-line--accent">NAME</span>
+      </h1>
+      <div class="hero-title-wrap">
+        <span class="hero-bracket">[</span>
+        <span class="hero-title" id="typedTitle"></span>
+        <span class="hero-cursor">|</span>
+        <span class="hero-bracket">]</span>
+      </div>
+      <p class="hero-desc">
+        Wielding code as a cursed technique — building systems that<br />
+        push the boundaries of what's possible.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn--primary">
+          <span class="btn-text">View My Work</span>
+          <span class="btn-glow"></span>
+        </a>
+        <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-count="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
+        <div class="stat-divider">|</div>
+        <div class="stat">
+          <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span class="scroll-text">SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-wipe section-wipe--alt" aria-hidden="true"></div>
+    <div class="section-bang" aria-hidden="true">SORCERER</div>
+    <div class="screen-label">01 // SORCERER STATUS</div>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">
+          <span class="kanji-deco">術師</span>
+          About Me
+        </h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-wrap">
+          <div class="about-image-frame">
+            <div class="image-placeholder">
+              <!-- Replace with: <img src="assets/profile.jpg" alt="Your Name" /> -->
+              <div class="placeholder-icon">
+                <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="50" cy="35" r="18" stroke="currentColor" stroke-width="2"/>
+                  <path d="M15 85 C15 65 85 65 85 85" stroke="currentColor" stroke-width="2" fill="none"/>
+                </svg>
+              </div>
+              <span>YOUR PHOTO</span>
+            </div>
+            <div class="frame-corner frame-corner--tl"></div>
+            <div class="frame-corner frame-corner--tr"></div>
+            <div class="frame-corner frame-corner--bl"></div>
+            <div class="frame-corner frame-corner--br"></div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-kanji">最強</span>
+            <span class="badge-text">CS Student</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-greeting">Hello, I'm</p>
+          <h3 class="about-name">Your Full Name</h3>
+          <p class="about-bio">
+            <!-- Replace this with your actual bio -->
+            A Computer Science student at <strong>Your University</strong>, passionate about
+            building powerful, efficient, and elegant software. Like a sorcerer mastering
+            their cursed technique, I'm constantly refining my craft — from low-level systems
+            to full-stack web applications.
+          </p>
+          <p class="about-bio">
+            I specialize in <strong>Your Focus Area</strong> and love tackling complex problems
+            that require both creative and analytical thinking. When I'm not coding, you'll
+            find me [your hobbies/interests].
+          </p>
+          <div class="about-details">
+            <div class="detail-item">
+              <span class="detail-label">University</span>
+              <span class="detail-value">Your University Name</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Degree</span>
+              <span class="detail-value">B.S. Computer Science</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Graduation</span>
+              <span class="detail-value">May 20XX</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">GPA</span>
+              <span class="detail-value">X.XX / 4.00</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="resume.pdf" target="_blank" class="btn btn--primary btn--sm">
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn--ghost btn--sm">Let's Talk</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS — Cursed Techniques -->
+  <section class="section section--dark" id="techniques">
+    <div class="section-wipe" aria-hidden="true"></div>
+    <div class="section-bang" aria-hidden="true">TECHNIQUE</div>
+    <div class="screen-label">02 // TECHNIQUE MANIFEST</div>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">
+          <span class="kanji-deco">術式</span>
+          Cursed Techniques
+        </h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-subtitle">My arsenal of technologies and tools</p>
+
+      <div class="techniques-grid">
+
+        <div class="technique-card" data-reveal>
+          <div class="technique-header">
+            <span class="technique-icon">⟨/⟩</span>
+            <h3 class="technique-name">Languages</h3>
+          </div>
+          <div class="technique-tags">
+            <span class="tag">Python</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Java</span>
+            <span class="tag">C/C++</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Bash</span>
+          </div>
+        </div>
+
+        <div class="technique-card" data-reveal>
+          <div class="technique-header">
+            <span class="technique-icon">⬡</span>
+            <h3 class="technique-name">Frameworks & Libraries</h3>
+          </div>
+          <div class="technique-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">TailwindCSS</span>
+          </div>
+        </div>
+
+        <div class="technique-card" data-reveal>
+          <div class="technique-header">
+            <span class="technique-icon">⊕</span>
+            <h3 class="technique-name">Tools & Platforms</h3>
+          </div>
+          <div class="technique-tags">
+            <span class="tag">Git</span>
+            <span class="tag">Docker</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Linux</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Firebase</span>
+          </div>
+        </div>
+
+        <div class="technique-card" data-reveal>
+          <div class="technique-header">
+            <span class="technique-icon">◈</span>
+            <h3 class="technique-name">Concepts</h3>
+          </div>
+          <div class="technique-tags">
+            <span class="tag">Data Structures</span>
+            <span class="tag">Algorithms</span>
+            <span class="tag">OOP</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-wipe section-wipe--alt" aria-hidden="true"></div>
+    <div class="section-bang" aria-hidden="true">DOMAIN</div>
+    <div class="screen-label">03 // DOMAIN ARCHIVE</div>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title">
+          <span class="kanji-deco">領域</span>
+          My Domain
+        </h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-subtitle">Selected projects — each one a binding vow with the craft</p>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 — FEATURED -->
+        <article class="project-card project-card--featured" data-reveal>
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="ptag">React</span>
+              <span class="ptag">Node.js</span>
+              <span class="ptag">PostgreSQL</span>
+            </div>
+            <h3 class="project-title">Project Title One</h3>
+            <p class="project-desc">
+              A brief description of your project — what it does, what problem it solves, and
+              what you built it with. Make it compelling and clear.
+            </p>
+            <ul class="project-bullets">
+              <li>Key achievement or feature #1</li>
+              <li>Key achievement or feature #2</li>
+              <li>Measurable impact or metric</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card" data-reveal>
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="ptag">Python</span>
+              <span class="ptag">FastAPI</span>
+              <span class="ptag">Docker</span>
+            </div>
+            <h3 class="project-title">Project Title Two</h3>
+            <p class="project-desc">
+              Description of your second project. Highlight the technology choices and
+              the outcomes you achieved.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card" data-reveal>
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="ptag">Java</span>
+              <span class="ptag">Spring Boot</span>
+              <span class="ptag">MySQL</span>
+            </div>
+            <h3 class="project-title">Project Title Three</h3>
+            <p class="project-desc">
+              Description of your third project. What did you learn? What challenges did
+              you overcome?
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15,3 21,3 21,9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <!-- PROJECT 4 -->
+        <article class="project-card" data-reveal>
+          <div class="project-number">04</div>
+          <div class="project-content">
+            <div class="project-tags">
+              <span class="ptag">Machine Learning</span>
+              <span class="ptag">Python</span>
+              <span class="ptag">TensorFlow</span>
+            </div>
+            <h3 class="project-title">Project Title Four</h3>
+            <p class="project-desc">
+              Description of your fourth project. Quantify results where possible —
+              accuracy rates, performance improvements, users served.
+            </p>
+            <div class="project-links">
+              <a href="#" class="project-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+      </div>
+
+      <div class="projects-more">
+        <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener" class="btn btn--ghost">
+          View All on GitHub →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section section--dark" id="experience">
+    <div class="section-wipe" aria-hidden="true"></div>
+    <div class="section-bang" aria-hidden="true">CHRONICLE</div>
+    <div class="screen-label">04 // BATTLE CHRONICLE</div>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title">
+          <span class="kanji-deco">経験</span>
+          Experience
+        </h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Software Engineer Intern</h3>
+                <p class="timeline-company">Company Name</p>
+              </div>
+              <span class="timeline-date">Jun 20XX — Aug 20XX</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Describe a key contribution or project you worked on with measurable impact</li>
+              <li>Highlight a specific technical achievement (e.g., reduced load time by X%)</li>
+              <li>Mention tools, frameworks, or methodologies used</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="ttag">React</span>
+              <span class="ttag">Python</span>
+              <span class="ttag">AWS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+            <div class="marker-line"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Research Assistant</h3>
+                <p class="timeline-company">University Lab / Department</p>
+              </div>
+              <span class="timeline-date">Jan 20XX — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Describe your research focus or the lab's work</li>
+              <li>Highlight any publications, presentations, or tangible outputs</li>
+              <li>Tools and methods used in the research</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="ttag">Python</span>
+              <span class="ttag">Data Analysis</span>
+              <span class="ttag">ML</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-reveal>
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Teaching Assistant</h3>
+                <p class="timeline-company">Your University — CS Department</p>
+              </div>
+              <span class="timeline-date">Aug 20XX — Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Course name and what you helped teach</li>
+              <li>Number of students you supported or sections you ran</li>
+              <li>Office hours, grading, or project guidance</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="ttag">Java</span>
+              <span class="ttag">Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT — Binding Vow -->
+  <section class="section" id="contact">
+    <div class="section-wipe section-wipe--alt" aria-hidden="true"></div>
+    <div class="section-bang" aria-hidden="true">VOWS</div>
+    <div class="screen-label">05 // BINDING VOW</div>
+    <div class="section-inner">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title">
+          <span class="kanji-deco">誓約</span>
+          Binding Vow
+        </h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="section-subtitle">
+        In exchange for reaching out, I vow to respond within 24 hours.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-block">
+            <h3 class="contact-label">// OPEN TO</h3>
+            <ul class="contact-list">
+              <li>Full-time roles (graduating 20XX)</li>
+              <li>Internship opportunities</li>
+              <li>Research collaborations</li>
+              <li>Open source contributions</li>
+            </ul>
+          </div>
+          <div class="contact-socials">
+            <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 8.536 5.36a2 2 0 001.928 0L21 7"/></svg>
+              your.email@example.com
+            </a>
+            <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/in/YOUR_LINKEDIN
+            </a>
+            <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              github.com/YOUR_GITHUB
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell me more..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-glow"></span>
+          </button>
+          <p class="form-note">
+            Note: This form is a frontend demo. Connect a backend or service like
+            <strong>EmailJS / Formspree / Resend</strong> to enable real email delivery.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="nav-kanji">呪術</span>
+        <span class="footer-name">YOUR_NAME</span>
+      </div>
+      <p class="footer-copy">
+        Designed & Built by <strong>Your Name</strong> · <span id="footerYear"></span>
+      </p>
+      <div class="footer-links">
+        <a href="https://github.com/YOUR_GITHUB" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:your.email@example.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

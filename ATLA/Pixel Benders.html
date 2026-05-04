@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Pixel Benders — Original Cast</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; overflow: hidden; background: #f0eee9; }
+  * { box-sizing: border-box; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+<script type="text/babel" src="design-canvas.jsx"></script>
+<script type="text/babel" src="pixel-engine.jsx"></script>
+<script type="text/babel" src="roster-sprites.jsx"></script>
+<script type="text/babel" src="class-sprites.jsx"></script>
+<script type="text/babel" src="roster-artboard.jsx"></script>
+<script type="text/babel" src="class-artboard.jsx"></script>
+<script type="text/babel" src="bending-sprites.jsx"></script>
+<script type="text/babel" src="bending-arena.jsx"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel">
+const App = () => (
+  <DesignCanvas>
+    <DCSection
+      id="option-a"
+      title="Option A — Four Nations Roster"
+      subtitle="8 original archetype characters · 24×28 pixel portraits · idle bob animation">
+      <DCArtboard id="roster" label="Character Roster · CRT file view" width={1100} height={720}>
+        <RosterArtboard />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection
+      id="option-b"
+      title="Option B — Bender Class Select"
+      subtitle="4 generic element practitioners · 32×48 full-body · animated signature FX · click tabs to switch">
+      <DCArtboard id="class-select" label="Class Select Screen" width={1100} height={720}>
+        <ClassSelectArtboard />
+      </DCArtboard>
+    </DCSection>
+
+    <DCSection
+      id="arena"
+      title="Bending Arena — Animation Demo"
+      subtitle="Click ◀ / ▶ to trigger each bender's full animation cycle (windup → release → projectile fly)">
+      <DCArtboard id="arena" label="Four Elements · Interactive Bending" width={1100} height={820}>
+        <BendingArena />
+      </DCArtboard>
+    </DCSection>
+
+    <DCPostIt top={-40} right={80} rotate={3} width={220}>
+      <b>Original designs.</b> No licensed characters — these are archetypes inspired by the four-nations concept with invented names, faces, and outfits.
+    </DCPostIt>
+  </DesignCanvas>
+);
+
+ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+</script>
+</body>
+</html>

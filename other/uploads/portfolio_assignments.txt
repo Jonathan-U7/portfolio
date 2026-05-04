@@ -1,0 +1,233 @@
+================================================================================
+  PORTFOLIO ASSIGNMENTS GUIDE
+  CS 430: Internet, Web & Cloud Systems
+  CS 495: Web and Cloud Security
+  Portland State University — Prof. Wu-chang Feng
+================================================================================
+
+Legend:
+  [★★★] HIGH portfolio value — strong signal for tech/cloud/security roles
+  [★★☆] MEDIUM portfolio value — good supporting evidence
+  [★☆☆] LOW portfolio value — foundational/administrative, less visible to employers
+
+--------------------------------------------------------------------------------
+  CS 430: INTERNET, WEB & CLOUD SYSTEMS
+--------------------------------------------------------------------------------
+
+HOMEWORK ASSIGNMENTS
+--------------------
+
+[★★☆] HW #1 — Internet & Networking Fundamentals
+  Topics: Internet protocols, Data-link, ARP, DHCP, IP, NAT, IPv6, ICMP, UDP,
+  TCP, HTTP, DNS, TLS
+  Notes: Demonstrates foundational networking knowledge expected for cloud/backend
+  roles.
+
+[★★★] HW #2 — Web Programming & Frameworks
+  Topics: Web programming languages, MVC architecture, web frameworks, Python,
+  Flask, nginx/wsgi, Databases, SQL/NoSQL
+  Notes: Highly portfolio-relevant. Flask + nginx + database experience maps
+  directly to backend developer and full-stack roles. Showcase any apps built.
+
+[★★★] HW #3 — Databases, Web APIs & Virtualization
+  Topics: ORMs, Web APIs, JSON/REST/gRPC/GraphQL, Docker containers,
+  virtualization (Type 1 & 2), Unikernels
+  Notes: REST API design and Docker are near-universal requirements in software
+  and cloud roles. Excellent portfolio items.
+
+[★★★] HW #4 — Cloud Computing & Serverless
+  Topics: Cloud overview, Cloud Security, IAM (GCP & AWS), Infrastructure as a
+  Service, Database as a Service, Serverless platforms (PaaS), Functions as a
+  Service (FaaS), Serverless containers
+  Notes: Hands-on AWS/GCP IAM and serverless experience is extremely valuable.
+  Document any deployed services or architecture diagrams.
+
+WEEKLY LAB NOTEBOOKS
+--------------------
+
+[★☆☆] Week 1 Labs — Internet Basics
+  Topics: Data-link, ARP, DHCP, IP networking
+  Notes: Foundational. Less flashy for portfolios but shows rigor.
+
+[★☆☆] Week 2 Labs — Networking Protocols
+  Topics: NAT, IPv6, SDNs, ICMP, UDP, TCP, HTTP, DNS, TLS
+  Notes: Solid technical background. Good talking points for interviews.
+
+[★★☆] Week 3 Labs — Web Development
+  Topics: Web programming languages, MVC, Flask, Python, nginx, databases
+  Notes: Any working web apps built here are worth showcasing.
+
+[★★★] Week 4 Labs — APIs & Containers
+  Topics: Web APIs, REST/gRPC/GraphQL, Docker containers
+  Notes: Docker + REST API experience is a top hire signal. Document any
+  containerized apps.
+
+[★★★] Week 5 Labs — Cloud Platforms
+  Topics: GCP & AWS IAM, Infrastructure as a Service, Database as a Service
+  Notes: Real cloud provider experience is highly sought after. Screenshots or
+  architecture diagrams make great portfolio artifacts.
+
+[★★★] Week 6 Labs — Serverless Computing
+  Topics: PaaS, Functions as a Service, Serverless containers
+  Notes: Serverless architecture skills are in high demand across all major cloud
+  providers.
+
+[★★★] Week 7 Labs — Infrastructure as Code & ML APIs
+  Topics: Kubernetes, Terraform, Machine Learning APIs
+  Notes: Terraform and Kubernetes are premier DevOps/cloud skills. Even basic
+  IaC experience stands out on a resume.
+
+[★★★] Week 8 Labs — LLMs, Agents & API Gateways
+  Topics: LLMs, Retrieval-Augmented Generation (RAG), AI Agents, MCP, API Gateways
+  Notes: Extremely timely and high-value. Any RAG pipeline or LLM integration
+  work is immediately marketable.
+
+[★★☆] Week 9 Labs — Auth, Data & Backend Services
+  Topics: OAuth2, Backend as a Service (BaaS), Data Warehousing, Data
+  Visualization, Data Notebooks
+  Notes: OAuth2 is a must-know for web/cloud roles. Data warehousing skills
+  support data engineering or backend tracks.
+
+[★★☆] Week 10 Labs — Advanced Data & CDNs
+  Topics: Data processing, Advanced Data Systems, CDNs, HTTP/2, QUIC
+  Notes: CDN and HTTP/2 knowledge is valuable for performance-focused roles
+  (e.g., platform engineering, SRE).
+
+FINAL PROJECT
+-------------
+
+[★★★] CS 430 Final Project — Individual Cloud/Web System
+  Description: An individually completed project demonstrating end-to-end
+  implementation of course concepts (web application, cloud deployment, APIs,
+  containers, etc.)
+  Notes: This is your single strongest CS 430 portfolio artifact. Deploy it
+  publicly if possible, add a README, and link it in your resume/GitHub. Emphasize
+  any cloud services used (AWS/GCP), containerization, and API design.
+
+--------------------------------------------------------------------------------
+  CS 495: WEB AND CLOUD SECURITY
+--------------------------------------------------------------------------------
+
+HOMEWORK ASSIGNMENTS
+--------------------
+
+[★★★] HW #1 — Authentication & Session Management / Broken Authentication
+  Topics: Web authentication, session management vulnerabilities, broken auth
+  exploitation
+  Notes: Auth vulnerabilities are foundational to security work. Demonstrates
+  understanding of real OWASP Top 10 issues.
+
+[★★★] HW #2 — SQL Injection (Blind SQLi)
+  Topics: SQL injection mechanics, blind SQL injection exploitation techniques
+  Notes: SQL injection is a core penetration testing skill. Completing a blind
+  SQLi assignment shows advanced exploitation ability — highly relevant for
+  security roles.
+
+WEEKLY LAB NOTEBOOKS
+--------------------
+
+[★★☆] Notebook 1 — Web Basics & Programming
+  Topics: Web fundamentals, client-server model, basic web programming
+  Notes: Foundational for all subsequent security labs.
+
+[★★★] Notebook 2 — Access Control & Sensitive Data Exposure
+  Topics: Broken access control, unvalidated redirects/forwards, file upload
+  vulnerabilities, file includes, HTTPS/sensitive data exposure
+  Notes: Access control flaws are the #1 OWASP vulnerability. Practical
+  exploitation experience here is a strong signal for security roles.
+
+[★★★] Notebook 3 — Injection Vulnerabilities
+  Topics: SSRF, XML External Entities (XXE), command injection, code injection,
+  SQL injection
+  Notes: Injection attacks are a core pentest competency. SSRF has become
+  especially prominent in cloud security contexts.
+
+[★★★] Notebook 4 — SQL Injection (Deep Dive)
+  Topics: SQL injection (various techniques), blind SQL injection
+  Notes: Multiple labs dedicated to SQLi demonstrates depth. Excellent for
+  security analyst, AppSec, and pentester roles.
+
+[★★★] Notebook 5 — Cross-Site Scripting (XSS)
+  Topics: XSS attack types, exploitation, defense mechanisms
+  Notes: XSS is one of the most prevalent web vulnerabilities. Demonstrated
+  practical exploitation is valuable for any security-focused role.
+
+[★★★] Notebook 6 — Advanced Web Attacks
+  Topics: CORS misconfigurations, Content Security Policy (CSP), CSRF,
+  Clickjacking, Web Cache Poisoning, Request Smuggling, Insecure
+  Deserialization, WebSockets, API misconfigurations, Insufficient Logging
+  Notes: Cache poisoning and request smuggling are advanced attack techniques
+  that signal serious security depth. Great conversation topics in interviews.
+
+[★★★] Notebook 7 — Professional Security Tools
+  Topics: wfuzz, nmap, hydra, sqlmap, xsstrike, commix, metasploit
+  Notes: Hands-on experience with industry-standard pentesting tools is directly
+  resume-worthy. List specific tools under a "Security Tools" skills section.
+
+[★★★] Notebook 8 — Cloud Security (GCP & AWS)
+  Topics: Cloud overview, GCP security, AWS security, navigating cloud
+  environments, AWS CloudGoat (iam_privesc_by_rollback, ec2_ssrf)
+  Notes: CloudGoat is a deliberately vulnerable AWS environment used by real
+  security teams for training. Completing these scenarios is a meaningful
+  credential — call it out specifically in your portfolio.
+
+[★★★] Notebook 9 — Infrastructure/Security as Code & Advanced Cloud Attacks
+  Topics: Infrastructure as Code, Security as Code, Terraform, AWS CloudGoat
+  (cloud_breach_s3, rce_web_app)
+  Notes: Cloud breach scenarios (S3 exfiltration, RCE via web app) are exactly
+  what cloud security engineers defend against. This is top-tier portfolio
+  content.
+
+FINAL PROJECT
+-------------
+
+[★★★] CS 495 Final Project — PortSwigger Web Security Academy Labs + Screencast
+  Description: Solve a set of PortSwigger Web Security Academy challenge levels
+  (covering real-world web vulnerabilities) and produce a recorded walkthrough
+  demonstrating your methodology.
+  Notes: This is your strongest CS 495 portfolio artifact by far. PortSwigger
+  labs are industry-recognized (used by professionals for OSCP/bug bounty prep).
+  Host your screencast on YouTube (unlisted) or Vimeo and link it in your resume.
+  It functions similarly to a CTF writeup and demonstrates real offensive
+  security skill.
+
+--------------------------------------------------------------------------------
+  SUMMARY: TOP PORTFOLIO PRIORITIES (by career track)
+--------------------------------------------------------------------------------
+
+FOR SOFTWARE / BACKEND / FULL-STACK ROLES:
+  1. CS 430 Final Project (deployed web/cloud app)
+  2. HW #2 & #3 (Flask APIs, Docker, REST)
+  3. Week 7-8 Labs (Kubernetes, Terraform, LLM/RAG work)
+  4. Week 4-6 Labs (containers, cloud platforms, serverless)
+
+FOR CLOUD / DEVOPS / SRE ROLES:
+  1. CS 430 Final Project
+  2. HW #4 (AWS/GCP IAM, serverless)
+  3. Week 7 Labs (Terraform, Kubernetes)
+  4. CS 495 Notebook 9 (Terraform, cloud breach scenarios)
+  5. CS 495 Notebook 8 (CloudGoat, AWS/GCP security)
+
+FOR SECURITY / APPSEC / PENETRATION TESTING ROLES:
+  1. CS 495 Final Project (PortSwigger labs + screencast walkthrough)
+  2. CS 495 Notebooks 3-6 (injection, XSS, CSRF, advanced web attacks)
+  3. CS 495 Notebook 7 (professional tools: nmap, metasploit, sqlmap, etc.)
+  4. CS 495 Notebooks 8-9 (CloudGoat AWS scenarios)
+  5. HW #1 & #2 (broken auth, blind SQL injection)
+
+--------------------------------------------------------------------------------
+  TIPS FOR PRESENTING THESE IN A PORTFOLIO
+--------------------------------------------------------------------------------
+
+- Upload all code to GitHub with descriptive READMEs explaining the project,
+  technologies used, and what you learned.
+- For cloud labs, include architecture diagrams or screenshots of deployed
+  infrastructure (sanitized of credentials).
+- For the CS 495 Final Project, host your PortSwigger walkthrough screencast
+  online and link directly from your resume.
+- Consider writing short blog posts (on Medium, Dev.to, or a personal site) for
+  standout labs like CloudGoat, the RAG/LLM pipeline, or the SQLi deep dives.
+- Group your GitHub repos into two pinned sections: "Cloud & Systems Projects"
+  and "Security & Penetration Testing."
+
+================================================================================

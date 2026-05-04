@@ -1,0 +1,232 @@
+============================================================
+  JJK PORTFOLIO — SETUP CHECKLIST
+  Everything you need to fill in before going live
+============================================================
+
+LEGEND:
+  [ ]  — Not done yet
+  [x]  — Completed
+
+
+------------------------------------------------------------
+  SECTION 1 — PERSONAL INFO  (index.html)
+------------------------------------------------------------
+
+[ ] Replace "YOUR_NAME" (navbar brand + footer) with your actual name
+[ ] Replace "Your Full Name" (about section) with your full name
+[ ] Replace "Your University Name" with your school (e.g., UCLA, Howard, UT Austin)
+[ ] Set your degree: B.S. Computer Science (or your actual major)
+[ ] Set your expected graduation month/year (e.g., "May 2026")
+[ ] Set your GPA (or remove that row if you prefer not to show it)
+[ ] Write your personal bio in the About section (2–3 short paragraphs)
+[ ] Update "your hobbies/interests" in the bio placeholder
+[ ] Update "Your Focus Area" in the bio (e.g., Full-Stack, AI/ML, Systems)
+
+
+------------------------------------------------------------
+  SECTION 2 — CONTACT LINKS  (index.html)
+------------------------------------------------------------
+
+[ ] Replace "your.email@example.com" with your real email (2 places)
+[ ] Replace "YOUR_LINKEDIN" with your LinkedIn username (2 places)
+[ ] Replace "YOUR_GITHUB" with your GitHub username (3 places)
+[ ] (Optional) Add your personal website / portfolio domain
+
+
+------------------------------------------------------------
+  SECTION 3 — PROJECTS  (index.html)
+------------------------------------------------------------
+
+  Project 1 (Featured — largest card):
+  [ ] Replace "Project Title One" with real project name
+  [ ] Replace tech stack tags (React, Node.js, PostgreSQL) with actual ones
+  [ ] Write a real 1–2 sentence description
+  [ ] Fill in 3 bullet points: key features or measurable achievements
+  [ ] Add GitHub repo URL to the GitHub link href
+  [ ] Add live demo URL (or remove the "Live Demo" link if no live version)
+
+  Project 2:
+  [ ] Replace "Project Title Two" with real name
+  [ ] Update tech stack tags
+  [ ] Write description
+  [ ] Add GitHub URL
+
+  Project 3:
+  [ ] Replace "Project Title Three" with real name
+  [ ] Update tech stack tags
+  [ ] Write description
+  [ ] Add GitHub URL
+  [ ] Add live demo URL (or remove link)
+
+  Project 4:
+  [ ] Replace "Project Title Four" with real name
+  [ ] Update tech stack tags
+  [ ] Write description (quantify results: accuracy %, users, perf gains)
+  [ ] Add GitHub URL
+
+  [ ] Add or remove project cards as needed (duplicate an article block to add more)
+
+
+------------------------------------------------------------
+  SECTION 4 — SKILLS  (index.html, section id="techniques")
+------------------------------------------------------------
+
+[ ] Update "Languages" tags to match what you actually know
+[ ] Update "Frameworks & Libraries" tags
+[ ] Update "Tools & Platforms" tags
+[ ] Update "Concepts" tags
+[ ] (Optional) Add a 5th card for a specialty area (e.g., Cybersecurity, Game Dev, Mobile)
+
+
+------------------------------------------------------------
+  SECTION 5 — EXPERIENCE  (index.html, section id="experience")
+------------------------------------------------------------
+
+  Job/Internship 1:
+  [ ] Replace "Software Engineer Intern" with your actual role title
+  [ ] Replace "Company Name" with the real company
+  [ ] Set date range (e.g., "Jun 2024 — Aug 2024")
+  [ ] Write 3 bullet points (action verb + what you did + impact/metric)
+  [ ] Update tech tags
+
+  Job/Position 2:
+  [ ] Replace "Research Assistant" with your actual role
+  [ ] Replace "University Lab / Department" with real lab/dept name
+  [ ] Set date range
+  [ ] Write bullet points
+
+  Job/Position 3:
+  [ ] Replace "Teaching Assistant" with actual role
+  [ ] Replace course/department placeholder
+  [ ] Write bullet points
+
+  [ ] Add more timeline-item blocks if you have more experience
+  [ ] Remove blocks you don't need
+
+
+------------------------------------------------------------
+  SECTION 6 — HERO STATS  (index.html)
+------------------------------------------------------------
+
+[ ] Update "10" (Projects count) — data-count="10" attribute
+[ ] Update "3" (Years Coding) — data-count="3" attribute
+[ ] Update "5" (Technologies) — data-count="5" — consider using a higher number
+
+
+------------------------------------------------------------
+  SECTION 7 — CONTACT OPEN-TO LIST  (index.html)
+------------------------------------------------------------
+
+[ ] Update "graduating 20XX" with your actual graduation year
+[ ] Add/remove items from the "Open To" list (internships, full-time, research, etc.)
+
+
+------------------------------------------------------------
+  SECTION 8 — ASSETS (files to add)
+------------------------------------------------------------
+
+[ ] Add your profile photo:
+      - File: assets/profile.jpg  (or .png, .webp)
+      - Recommended size: ~600x800px, portrait orientation
+      - In index.html, find the image-placeholder div and replace with:
+        <img src="assets/profile.jpg" alt="Your Name" />
+
+[ ] Add your resume:
+      - File: resume.pdf
+      - Place in the root portfolio folder (same level as index.html)
+      - The "Download Resume" and "RESUME" nav button will auto-link to it
+
+[ ] (Optional) Add a favicon:
+      - File: assets/favicon.ico  (or favicon.png)
+      - Add to index.html <head>:
+        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+
+------------------------------------------------------------
+  SECTION 9 — TYPED TITLES  (js/main.js)
+------------------------------------------------------------
+
+[ ] In js/main.js, find the `phrases` array and update the typing titles:
+      const phrases = [
+        'Full-Stack Developer',   ← keep or change
+        'Software Engineer',      ← keep or change
+        'CS Student',             ← keep or change
+        'Open Source Contributor',
+        'Problem Solver',
+      ];
+
+
+------------------------------------------------------------
+  SECTION 10 — CONTACT FORM BACKEND  (js/main.js)
+------------------------------------------------------------
+
+The contact form is frontend-only by default. Choose one option:
+
+Option A — Formspree (easiest, free):
+  [ ] Go to formspree.io and create a form
+  [ ] In index.html, set: <form action="https://formspree.io/f/YOUR_ID" method="POST">
+  [ ] Remove the e.preventDefault() block from main.js for that form
+
+Option B — EmailJS (no backend, free tier):
+  [ ] Create account at emailjs.com
+  [ ] Add the EmailJS CDN script to index.html
+  [ ] In main.js, uncomment the emailjs.sendForm() block and fill in IDs
+
+Option C — Custom backend:
+  [ ] Build an API endpoint (Node/Express, Python/FastAPI, etc.)
+  [ ] POST form data to your endpoint
+  [ ] Add CORS headers if hosting separately
+
+  [ ] Pick and implement one of the options above
+
+
+------------------------------------------------------------
+  SECTION 11 — HOSTING / DEPLOYMENT
+------------------------------------------------------------
+
+[ ] Choose a hosting platform:
+      - GitHub Pages (free, easy): push repo → Settings → Pages
+      - Vercel (free, instant): connect GitHub repo, auto-deploy
+      - Netlify (free, easy drag-and-drop): drop the folder on netlify.com
+
+[ ] If using GitHub Pages:
+      - Create repo named:  YOUR_GITHUB_USERNAME.github.io
+      - Push all files → enable Pages in Settings
+
+[ ] (Optional) Get a custom domain:
+      - Namecheap, Google Domains, or Cloudflare Registrar
+      - Add a CNAME record pointing to your host
+      - Update the CNAME file if using GitHub Pages
+
+
+------------------------------------------------------------
+  SECTION 12 — META & SEO  (index.html <head>)
+------------------------------------------------------------
+
+[ ] Update <title>Your Name — Portfolio</title>
+[ ] Update <meta name="description" content="..."> with a real description
+[ ] (Optional) Add Open Graph tags for link previews:
+      <meta property="og:title"       content="Your Name — Portfolio" />
+      <meta property="og:description" content="CS student and developer..." />
+      <meta property="og:image"       content="https://yoursite.com/assets/og-image.jpg" />
+      <meta property="og:url"         content="https://yoursite.com" />
+
+
+------------------------------------------------------------
+  SECTION 13 — FINAL QA CHECKLIST
+------------------------------------------------------------
+
+[ ] Open index.html in a browser and check every section looks correct
+[ ] Test all GitHub / live demo links click through to the right places
+[ ] Test the resume PDF link downloads correctly
+[ ] Test on mobile (Chrome DevTools → toggle device toolbar)
+[ ] Verify contact form shows success state when submitted
+[ ] Check no placeholder text like "YOUR_NAME" or "your.email@example.com" remains
+[ ] Spell-check all bio, project, and experience text
+[ ] Run Lighthouse audit in Chrome DevTools → aim for 90+ on all scores
+[ ] Share link with a friend / mentor for feedback before submitting to recruiters
+
+
+============================================================
+  GOOD LUCK — 最強
+============================================================

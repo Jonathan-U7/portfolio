@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YOUR NAME — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&family=Bebas+Neue&family=Share+Tech+Mono&family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="scenes-wrap">
+
+<!-- ═══════════════════════════════════════════════
+     SCENE 1 · INTRO — purple panel + spinning card
+     Frames 127–148
+═══════════════════════════════════════════════ -->
+<section class="scene" id="s-intro">
+  <div class="intro-panel"></div>
+  <div class="intro-card">
+    <div class="intro-card-inner">
+      <span class="intro-card-kanji">呪</span>
+    </div>
+  </div>
+  <div class="intro-title">
+    <span class="intro-kanji-big">無量空処</span>
+    <span class="intro-sub">DOMAIN EXPANSION</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SCENE 2 · ABOUT — character reveal + dialogue
+     Frames 148–215
+═══════════════════════════════════════════════ -->
+<section class="scene" id="s-about">
+  <!-- Left: purple fill -->
+  <div class="about-bg-left"></div>
+  <!-- Diagonal white slash -->
+  <div class="about-slash"></div>
+  <!-- Right: dark area + character -->
+  <div class="about-char-area">
+    <svg class="char-svg" viewBox="0 0 220 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- White hair -->
+      <path d="M60 80 Q55 40 80 20 Q110 5 140 20 Q165 40 162 80 Q155 55 110 50 Q65 55 60 80Z" fill="white"/>
+      <!-- Head -->
+      <ellipse cx="110" cy="100" rx="45" ry="50" fill="white"/>
+      <!-- Blindfold -->
+      <rect x="68" y="82" width="84" height="22" rx="5" fill="#111"/>
+      <rect x="64" y="85" width="10" height="15" rx="3" fill="#222"/>
+      <rect x="148" y="85" width="10" height="15" rx="3" fill="#222"/>
+      <!-- Ear -->
+      <ellipse cx="65" cy="105" rx="7" ry="10" fill="white"/>
+      <ellipse cx="155" cy="105" rx="7" ry="10" fill="white"/>
+      <!-- Neck + high collar -->
+      <rect x="97" y="148" width="26" height="25" fill="#1a1a1a"/>
+      <path d="M80 148 Q95 160 110 165 Q125 160 140 148 L150 173 L70 173Z" fill="#1a1a1a"/>
+      <!-- Body - black jacket -->
+      <path d="M55 173 L165 173 L175 380 L45 380Z" fill="#111"/>
+      <!-- Jacket collar detail -->
+      <path d="M97 148 L110 175 L123 148" fill="none" stroke="#333" stroke-width="3"/>
+      <!-- Left arm -->
+      <path d="M55 185 L20 290 L32 296 L68 192Z" fill="#111"/>
+      <!-- Right arm -->
+      <path d="M165 185 L200 290 L188 296 L152 192Z" fill="#111"/>
+      <!-- Left hand (gloved) -->
+      <ellipse cx="26" cy="300" rx="12" ry="14" fill="#1a1a1a"/>
+      <!-- Right hand (gloved) -->
+      <ellipse cx="194" cy="300" rx="12" ry="14" fill="#1a1a1a"/>
+      <!-- Pants -->
+      <rect x="60" y="378" width="38" height="95" rx="6" fill="#0a0a0a"/>
+      <rect x="122" y="378" width="38" height="95" rx="6" fill="#0a0a0a"/>
+    </svg>
+  </div>
+  <!-- Menu icon bottom-right (like the frames) -->
+  <div class="about-menu-icon">
+    <span>≡</span><span>⊙</span>
+  </div>
+  <!-- Two P5-style dialogue boxes -->
+  <div class="about-dialogue dialogue-q">
+    <span class="dq-arrow-left"></span>
+    <span class="dq-text">Want to know more about me?</span>
+  </div>
+  <div class="about-dialogue dialogue-a">
+    <span class="da-text">Nothing.</span>
+    <span class="da-arrow-right"></span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SCENE 3 · MENU — dark corridor + resume nav
+     Frames 155–248
+═══════════════════════════════════════════════ -->
+<section class="scene" id="s-menu">
+  <!-- Dark corridor background (CSS art) -->
+  <div class="corridor">
+    <div class="corridor-floor"></div>
+    <div class="corridor-ceiling"></div>
+    <div class="corridor-wall-l"></div>
+    <div class="corridor-wall-r"></div>
+    <div class="corridor-stripe-l"></div>
+    <div class="corridor-stripe-r"></div>
+    <div class="corridor-light c1"></div>
+    <div class="corridor-light c2"></div>
+    <div class="corridor-light c3"></div>
+    <div class="corridor-graffiti">NEW GAME</div>
+    <!-- Sorcerer silhouettes -->
+    <div class="sorcerer s-far"></div>
+    <div class="sorcerer s-mid-l"></div>
+    <div class="sorcerer s-mid-r"></div>
+    <div class="sorcerer s-near-l"></div>
+    <div class="sorcerer s-near-r"></div>
+  </div>
+  <!-- Left overlay: RESUME logo + menu items -->
+  <div class="menu-left-panel">
+    <div class="menu-logo">
+      <span class="menu-logo-re">RE</span>
+      <span class="menu-logo-sume">SUME</span>
+    </div>
+    <nav class="menu-nav">
+      <a href="#s-info" class="menu-pill" data-delay="0">personal info</a>
+      <a href="#s-contact" class="menu-pill" data-delay="1">Socials</a>
+      <a href="https://github.com/YOUR_GITHUB" target="_blank" class="menu-pill" data-delay="2">GitHub</a>
+    </nav>
+  </div>
+  <!-- Floating nav card (slides in from bottom) -->
+  <div class="nav-card" id="navCard">
+    <div class="nav-card-header">
+      <span class="nav-card-label">SNS</span>
+      <div class="nav-card-portraits">
+        <span class="portrait">⊛</span>
+        <span class="portrait">⊗</span>
+      </div>
+    </div>
+    <div class="nav-card-sakura">✿ ✿</div>
+    <div class="nav-card-sections">
+      <a href="#s-about" class="nav-section">About Me</a>
+      <a href="#s-work" class="nav-section">Experiences</a>
+      <a href="#s-items" class="nav-section">Side Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SCENE 4 · PERSONAL INFO — speed lines + status card
+     Frames 248–265
+═══════════════════════════════════════════════ -->
+<section class="scene" id="s-info">
+  <!-- Red/purple corner triangle (top-left remnant) -->
+  <div class="info-corner-tri"></div>
+  <!-- Speed line diagonals -->
+  <div class="info-lines">
+    <div class="info-line il1"></div>
+    <div class="info-line il2"></div>
+    <div class="info-line il3"></div>
+    <div class="info-line il4"></div>
+  </div>
+  <!-- Status card -->
+  <div class="info-card">
+    <div class="info-card-icon">⊛</div>
+    <div class="info-card-data">
+      <div class="info-row"><span class="info-key">Name</span><span class="info-val">Your Name</span></div>
+      <div class="info-row"><span class="info-key">Email</span><span class="info-val">your@email.com</span></div>
+      <div class="info-row"><span class="info-key">School</span><span class="info-val">Your University</span></div>
+      <div class="info-row"><span class="info-key">Major</span><span class="info-val">B.S. Computer Science</span></div>
+    </div>
+    <div class="info-card-dashes">— — — — — —</div>
+  </div>
+  <!-- Character silhouette (right side, partially cut) -->
+  <div class="info-char-right">
+    <svg viewBox="0 0 140 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M40 55 Q38 28 55 15 Q70 5 90 15 Q107 28 105 55 Q100 40 70 38 Q40 40 40 55Z" fill="white"/>
+      <ellipse cx="70" cy="72" rx="30" ry="33" fill="white"/>
+      <rect x="44" y="60" width="54" height="15" rx="4" fill="#111"/>
+      <path d="M35 105 L105 105 L112 240 L28 240Z" fill="#111"/>
+      <path d="M35 115 L8 185 L18 190 L44 122Z" fill="#111"/>
+      <path d="M105 115 L132 185 L122 190 L96 122Z" fill="#111"/>
+    </svg>
+  </div>
+  <!-- Chinese text bottom (like the original) -->
+  <div class="info-bottom-text">更换为哪个人格面具？</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SCENE 5 · EXPERIENCES — command screen
+     Frames 265–295
+═══════════════════════════════════════════════ -->
+<section class="scene" id="s-exp-cmd">
+  <!-- Purple background left -->
+  <div class="cmd-bg-left"></div>
+  <!-- B&W JJK sticker collage right -->
+  <div class="cmd-stickers">
+    <span class="sticker st-1">六眼</span>
+    <span class="sticker st-2">UNLIMITED<br>VOID</span>
+    <span class="sticker st-3">MaLEVoLeNT<br>SHRiNe</span>
+    <span class="sticker st-4">Grade 1 ★</span>
+    <span class="sticker st-5">CoMMaND</span>
+    <span class="sticker st-6">⬡⬡⬡</span>
+    <span class="sticker st-7">Don't<br>Look</span>
+    <span class="sticker st-8">JUJUTSU<br>HIGH</span>
+    <span class="sticker st-9">呪術廻戦</span>
+    <span class="sticker st-10">★ ★ ★</span>
+    <span class="sticker st-11">JJK</span>
+    <span class="sticker st-12">CURSED<br>ENERGY</span>
+  </div>
+  <!-- Hand gesture (CSS/SVG) -->
+  <div class="cmd-hand-wrap">
+    <svg class="cmd-hand" viewBox="0 0 260 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Palm -->
+      <path d="M60 200 Q50 160 55 130 L55 90 Q55 70 75 70 Q95 70 95 90 L95 130
+               L95 85 Q95 65 115 65 Q135 65 135 85 L135 130
+               L135 90 Q135 68 155 68 Q175 68 175 90 L175 145
+               L175 130 Q175 110 193 110 Q210 110 210 135 L210 200
+               Q210 250 170 280 L170 370
+               Q120 380 90 370 L90 280 Q50 255 60 200Z"
+            fill="white" stroke="#111" stroke-width="4"/>
+      <!-- Knuckle lines -->
+      <line x1="75" y1="130" x2="75" y2="150" stroke="#ccc" stroke-width="2"/>
+      <line x1="115" y1="130" x2="115" y2="150" stroke="#ccc" stroke-width="2"/>
+      <line x1="155" y1="145" x2="155" y2="165" stroke="#ccc" stroke-width="2"/>
+      <!-- Purple slash through arm -->
+      <line x1="0" y1="310" x2="260" y2="200" stroke="#7b2fbe" stroke-width="12" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <!-- Label -->
+  <div class="cmd-label" id="expLabel">Experiences</div>
+  <!-- Bottom text -->
+  <div class="cmd-footer-text">呪術廻戦</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SCENE 6 · WORK HISTORY — RECORD screen
+     Frames 295–325
+═══════════════════════════════════════════════ -->
+<section class="scene" id="s-work">
+  <!-- Dark corridor BG faint -->
+  <div class="work-corridor-bg"></div>
+  <!-- RECORD title (P5 SAVE style) -->
+  <div class="work-title-wrap">
+    <span class="work-title-re">RE</span><span class="work-title-cord">CORD</span>
+  </div>
+  <!-- Stacked angled work cards -->
+  <div class="work-cards-stack">
+    <div class="work-card wc1">
+      <div class="wc-accent-bar"></div>
+      <div class="wc-company">→ YOUR COMPANY</div>
+      <div class="wc-role">Software Engineer</div>
+      <div class="wc-date">2025 Oct – now</div>
+      <div class="wc-dots">· · ·</div>
+    </div>
+    <div class="work-card wc2">
+      <div class="wc-company">→ Your Company</div>
+      <div class="wc-role">Software Engineer Intern</div>
+      <div class="wc-date">2024 Jun – 2024 Aug</div>
+    </div>
+    <div class="work-card wc3">
+      <div class="wc-company">→ University Lab</div>
+      <div class="wc-role">Research Assistant</div>
+      <div class="wc-date">2023 Jan – 2024 May</div>
+    </div>
+    <div class="work-card wc4">
+      <div class="wc-company">→ CS Department</div>
+      <div class="wc-role">Teaching Assistant</div>
+      <div class="wc-date">2022 – 2023</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SCENE 7 · PROJECTS INTRO — command screen #2
+     Frames 325–355
+═══════════════════════════════════════════════ -->
+<section class="scene" id="s-proj-cmd">
+  <div class="cmd-bg-left"></div>
+  <div class="cmd-stickers">
+    <span class="sticker st-1">六眼</span>
+    <span class="sticker st-2">UNLIMITED<br>VOID</span>
+    <span class="sticker st-3">MaLEVoLeNT<br>SHRiNe</span>
+    <span class="sticker st-4">Grade 1 ★</span>
+    <span class="sticker st-5">CoMMaND</span>
+    <span class="sticker st-6">⬡⬡⬡</span>
+    <span class="sticker st-7">Don't<br>Look</span>
+    <span class="sticker st-8">JUJUTSU<br>HIGH</span>
+    <span class="sticker st-9">呪術廻戦</span>
+    <span class="sticker st-10">★ ★ ★</span>
+    <span class="sticker st-11">JJK</span>
+    <span class="sticker st-12">CURSED<br>ENERGY</span>
+  </div>
+  <div class="cmd-hand-wrap">
+    <svg class="cmd-hand" viewBox="0 0 260 380" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M60 200 Q50 160 55 130 L55 90 Q55 70 75 70 Q95 70 95 90 L95 130
+               L95 85 Q95 65 115 65 Q135 65 135 85 L135 130
+               L135 90 Q135 68 155 68 Q175 68 175 90 L175 145
+               L175 130 Q175 110 193 110 Q210 110 210 135 L210 200
+               Q210 250 170 280 L170 370
+               Q120 380 90 370 L90 280 Q50 255 60 200Z"
+            fill="white" stroke="#111" stroke-width="4"/>
+      <line x1="75" y1="130" x2="75" y2="150" stroke="#ccc" stroke-width="2"/>
+      <line x1="115" y1="130" x2="115" y2="150" stroke="#ccc" stroke-width="2"/>
+      <line x1="155" y1="145" x2="155" y2="165" stroke="#ccc" stroke-width="2"/>
+      <line x1="0" y1="310" x2="260" y2="200" stroke="#7b2fbe" stroke-width="12" stroke-linecap="round"/>
+    </svg>
+  </div>
+  <div class="cmd-label" id="projLabel">Domain Archive</div>
+  <div class="cmd-footer-text">呪術廻戦</div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SCENE 8 · PROJECTS — ITEM screen
+     Frames 355–370
+═══════════════════════════════════════════════ -->
+<section class="scene" id="s-items">
+  <!-- Left: JJK character B&W art -->
+  <div class="items-char-area">
+    <!-- Halftone-style character -->
+    <div class="items-char-art">
+      <svg viewBox="0 0 280 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <!-- Sticker background patterns -->
+        <rect x="0" y="0" width="280" height="420" fill="none"/>
+        <!-- CoMMaND text -->
+        <text x="10" y="390" font-family="'Bebas Neue', sans-serif" font-size="52" fill="white" opacity="0.9" letter-spacing="2">CoMMaNd</text>
+        <!-- Sticker cluster -->
+        <rect x="5" y="5" width="100" height="30" rx="3" fill="none" stroke="white" stroke-width="2"/>
+        <text x="10" y="24" font-family="monospace" font-size="10" fill="white">ITEM SELECT</text>
+        <!-- Halftone dot grid -->
+        <pattern id="halftone" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+          <circle cx="6" cy="6" r="2.5" fill="white" opacity="0.3"/>
+        </pattern>
+        <rect x="120" y="20" width="150" height="200" rx="4" fill="url(#halftone)"/>
+        <!-- Character outline -->
+        <path d="M80 30 Q78 10 95 5 Q115 0 130 8 Q142 15 140 30 Q135 18 110 17 Q85 18 80 30Z" fill="white"/>
+        <ellipse cx="110" cy="52" rx="28" ry="30" fill="white"/>
+        <!-- Eyes (smirking expression) -->
+        <path d="M90 46 Q100 40 105 46" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M115 46 Q120 40 128 46" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round"/>
+        <!-- Smirk -->
+        <path d="M95 62 Q110 70 125 62" fill="none" stroke="black" stroke-width="2" stroke-linecap="round"/>
+        <!-- Body -->
+        <path d="M65 82 L155 82 L162 220 L58 220Z" fill="#111"/>
+        <path d="M65 95 L38 160 L48 165 L72 102Z" fill="#111"/>
+        <path d="M155 95 L182 160 L172 165 L148 102Z" fill="#111"/>
+        <!-- Sticker labels scattered -->
+        <g transform="rotate(-15 60 150)">
+          <rect x="20" y="140" width="70" height="22" rx="3" fill="white"/>
+          <text x="26" y="156" font-family="monospace" font-size="9" fill="black">PHANTOM</text>
+        </g>
+        <g transform="rotate(8 160 120)">
+          <rect x="145" y="105" width="60" height="22" rx="3" fill="black" stroke="white" stroke-width="1.5"/>
+          <text x="150" y="120" font-family="monospace" font-size="9" fill="white">PROTECT</text>
+        </g>
+      </svg>
+    </div>
+    <!-- "使用哪个道具?" subtitle -->
+    <div class="items-subtitle">使用哪个道具？</div>
+  </div>
+  <!-- Right: tilted dark panel with project buttons -->
+  <div class="items-panel" id="itemsPanel">
+    <a href="#" class="item-btn" data-delay="0">Project One</a>
+    <a href="#" class="item-btn" data-delay="1">Project Two</a>
+    <a href="#" class="item-btn" data-delay="2">Project Three<br><small>(Link coming soon)</small></a>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════
+     SCENE 9 · CONTACT — SHOP screen
+     Frames 415–529
+═══════════════════════════════════════════════ -->
+<section class="scene" id="s-contact">
+  <!-- Colorful shop background -->
+  <div class="shop-bg-art">
+    <div class="shop-cyan-fill"></div>
+    <div class="shop-red-arc"></div>
+    <div class="shop-yellow-stripes"></div>
+    <div class="shop-white-area"></div>
+    <div class="shop-dots-grid"></div>
+  </div>
+  <!-- Shop title top-left -->
+  <div class="shop-title-wrap">
+    <span class="shop-title-line1">JUJUTSU HIGH</span>
+    <span class="shop-title-line2">// SHOP</span>
+  </div>
+  <!-- Speech bubble top-right -->
+  <div class="shop-bubble">要怎么做呢？</div>
+  <!-- Center: large social icon -->
+  <div class="shop-icon-wrap">
+    <div class="shop-icon-ring"></div>
+    <div class="shop-icon">⊛</div>
+  </div>
+  <!-- Social info -->
+  <div class="shop-info">
+    <p class="shop-label">Contact:</p>
+    <div class="shop-links">
+      <a href="mailto:your@email.com" class="shop-link">✉ your@email.com</a>
+      <a href="https://linkedin.com/in/yourprofile" class="shop-link">in linkedin.com/in/you</a>
+      <a href="https://github.com/yourgithub" class="shop-link">⌥ github.com/you</a>
+      <a href="https://instagram.com/yourig" class="shop-link">◉ @yourig</a>
+    </div>
+  </div>
+  <!-- Handle text (like the original watermark) -->
+  <div class="shop-handle">@YOUR_HANDLE</div>
+  <!-- Bottom red border line -->
+  <div class="shop-bottom-bar"></div>
+</section>
+
+</div><!-- /.scenes-wrap -->
+
+<!-- Purple diagonal page-wipe overlay -->
+<div id="pageWipe"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
