@@ -878,6 +878,9 @@ body {
 #s-skills.active .stab-2 { animation: stoneRise 0.3s steps(3) 0.38s forwards; }
 #s-skills.active .stab-3 { animation: stoneRise 0.3s steps(3) 0.51s forwards; }
 #s-skills.active .stab-4 { animation: stoneRise 0.3s steps(3) 0.64s forwards; }
+#s-skills.active .stab-5 { animation: stoneRise 0.3s steps(3) 0.77s forwards; }
+#s-skills.active .stab-6 { animation: stoneRise 0.3s steps(3) 0.90s forwards; }
+#s-skills.active .stab-7 { animation: stoneRise 0.3s steps(3) 1.03s forwards; }
 @keyframes stoneRise {
   from { opacity: 0; transform: translateY(16px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -1039,6 +1042,7 @@ body {
 #s-experience.active .es-1 { animation: scrollIn 0.3s steps(3) 0.30s forwards; }
 #s-experience.active .es-2 { animation: scrollIn 0.3s steps(3) 0.44s forwards; }
 #s-experience.active .es-3 { animation: scrollIn 0.3s steps(3) 0.58s forwards; }
+#s-experience.active .es-4 { animation: scrollIn 0.3s steps(3) 0.72s forwards; }
 @keyframes scrollIn {
   from { opacity: 0; transform: translateY(12px); }
   to   { opacity: 1; transform: translateY(0); }
