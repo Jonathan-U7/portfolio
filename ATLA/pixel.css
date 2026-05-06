@@ -1223,15 +1223,15 @@ body {
   transform: translate(-50%, -50%);
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 16px;
   z-index: 8;
-  width: clamp(280px, 88%, 1080px);
-  max-height: 68vh;
+  width: clamp(320px, 92%, 1300px);
+  max-height: 74vh;
   overflow-y: auto;
 }
 .ice-card {
-  flex: 1 1 280px;
-  max-width: 360px;
+  flex: 1 1 340px;
+  max-width: 430px;
   overflow: hidden;
   border-radius: 0;
   background: var(--water-dominant);
@@ -1257,38 +1257,38 @@ body {
   height: 4px;
   background: var(--water-accent);
 }
-.ic-body { padding: 14px 14px 16px; }
+.ic-body { padding: 18px 18px 20px; }
 .ic-title {
   font-family: var(--f-pixel);
-  font-size: 0.48rem;
+  font-size: 0.58rem;
   color: var(--water-secondary-alt);
   letter-spacing: 1px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   line-height: 1.6;
 }
 .ic-stack {
   font-family: var(--f-body);
-  font-size: clamp(0.48rem, 0.85vw, 0.6rem);
+  font-size: clamp(0.58rem, 0.95vw, 0.72rem);
   color: var(--water-secondary);
   letter-spacing: 1px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   opacity: 0.85;
 }
 .ic-desc {
   font-family: var(--f-body);
-  font-size: clamp(0.6rem, 1vw, 0.7rem);
+  font-size: clamp(0.72rem, 1.1vw, 0.84rem);
   color: rgba(232,244,248,0.75);
   line-height: 1.65;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .ic-links { display: flex; gap: 8px; }
 .ic-link {
   font-family: var(--f-pixel);
-  font-size: 0.32rem;
+  font-size: 0.4rem;
   letter-spacing: 1px;
   color: var(--water-secondary);
   border: 2px solid rgba(200,220,232,0.45);
-  padding: 5px 10px;
+  padding: 6px 12px;
   box-shadow: 2px 2px 0 rgba(0,0,0,0.8);
   transition: background 0.05s steps(1), color 0.05s steps(1), transform 0.05s steps(1);
 }
