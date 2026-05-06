@@ -1332,11 +1332,17 @@ body {
   align-items: center;
   justify-content: center;
 }
-.aura-ring {
+.aura-rings-svg {
   position: absolute;
-  border-radius: 30%;
-  border: 2px solid;
+  width: 430px;
+  height: 430px;
+  overflow: visible;
+}
+.aura-ring {
   opacity: 0;
+  stroke-width: 2;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 #s-contact.active .aura-ring {
   animation:
@@ -1351,10 +1357,10 @@ body {
   0%,100%{ opacity:var(--ar-op,0.35); transform:scale(1); }
   50%    { opacity:calc(var(--ar-op,0.35) * 1.7); transform:scale(1.04); }
 }
-.ar-1{width:420px;height:420px;border-color:rgba(200,220,232,0.45);--ar-dur:1.0s;--ar-del:0.1s;--ar-op:0.45;--ar-loop:1.2s;}
-.ar-2{width:320px;height:320px;border-color:rgba(74,103,65,0.55);  --ar-dur:0.9s;--ar-del:0.2s;--ar-op:0.55;--ar-loop:1.4s;}
-.ar-3{width:220px;height:220px;border-color:rgba(139,26,26,0.6);   --ar-dur:0.8s;--ar-del:0.3s;--ar-op:0.6; --ar-loop:1.6s;}
-.ar-4{width:130px;height:130px;border-color:rgba(232,118,26,0.65); --ar-dur:0.7s;--ar-del:0.4s;--ar-op:0.65;--ar-loop:1.8s;}
+.ar-1 { stroke: rgba(200,220,232,0.45); --ar-dur:1.0s; --ar-del:0.1s; --ar-op:0.45; --ar-loop:1.2s; }
+.ar-2 { stroke: rgba(74,103,65,0.55);   --ar-dur:0.9s; --ar-del:0.2s; --ar-op:0.55; --ar-loop:1.4s; }
+.ar-3 { stroke: rgba(139,26,26,0.6);    --ar-dur:0.8s; --ar-del:0.3s; --ar-op:0.6;  --ar-loop:1.6s; }
+.ar-4 { stroke: rgba(232,118,26,0.65);  --ar-dur:0.7s; --ar-del:0.4s; --ar-op:0.65; --ar-loop:1.8s; }
 .aura-symbol {
   width: 3.2rem; height: 3.2rem;
   display: block;
@@ -1568,7 +1574,7 @@ body {
   .about-scroll    { width: 80%; left:50%; transform:translateX(-50%) translateY(-50%); }
   .appa-wrap       { opacity: 0.4; top: 2%; right: -5%; width: 55%; }
   .fire-temple-svg { width: 95%; }
-  .aura-ring       { transform: scale(0.65) !important; }
+  .aura-rings-svg  { transform: scale(0.65); }
   /* Stack both panels vertically on small screens */
   .career-tracks-panel { left: 5%; right: 5%; bottom: 42%; width: auto; }
   .contact-panel  { right: 5%; left: 5%; bottom: 12%; min-width: 0; }
