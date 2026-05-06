@@ -1334,7 +1334,7 @@ body {
 }
 .aura-ring {
   position: absolute;
-  border-radius: 0;       /* Square rings instead of circles */
+  border-radius: 30%;
   border: 2px solid;
   opacity: 0;
 }
