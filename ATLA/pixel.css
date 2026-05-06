@@ -1414,13 +1414,15 @@ body {
 
 .contact-panel {
   position: absolute;
-  bottom: 12%; left: 50%;
-  transform: translateX(-50%);
+  bottom: 12%;
+  right: 5%;
+  left: auto;
+  transform: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
   z-index: 5;
-  min-width: clamp(260px, 40%, 480px);
+  min-width: clamp(220px, 28%, 380px);
   opacity: 0;
 }
 #s-contact.active .contact-panel { animation: fadeUp 0.3s steps(3) 0.55s forwards; }
@@ -1478,12 +1480,12 @@ body {
 ════════════════════════════════════════════════════════════ */
 .career-tracks-panel {
   position: absolute;
-  bottom: 140px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 12%;
+  left: 5%;
+  transform: none;
   z-index: 8;
-  text-align: center;
-  width: min(520px, 90vw);
+  text-align: left;
+  width: min(360px, 44vw);
 }
 .ctp-label {
   font-family: 'Press Start 2P', monospace;
@@ -1495,20 +1497,35 @@ body {
 .ctp-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 10px;
 }
 .ctp-btn {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 4px;
-  padding: 10px 14px;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  padding: 10px 30px;
   text-decoration: none;
-  border: 2px solid;
-  transition: opacity 0.1s;
+  border: none;
+  transition: opacity 0.1s, filter 0.05s steps(1);
   image-rendering: pixelated;
+  clip-path: polygon(
+    0% 50%,
+    10px 0%,
+    calc(100% - 10px) 0%,
+    100% 50%,
+    calc(100% - 10px) 100%,
+    10px 100%
+  );
+  --ctp-border: transparent;
+  filter:
+    drop-shadow( 2px  0   0 var(--ctp-border))
+    drop-shadow(-2px  0   0 var(--ctp-border))
+    drop-shadow( 0    2px 0 var(--ctp-border))
+    drop-shadow( 0   -2px 0 var(--ctp-border));
 }
-.ctp-btn:hover { opacity: 0.75; }
+.ctp-btn:hover { opacity: 0.8; }
 .ctp-nation {
   font-family: 'Press Start 2P', monospace;
   font-size: 0.38rem;
@@ -1523,13 +1540,13 @@ body {
 }
 
 /* Nation accent colors */
-.ctp-air   { background: rgba(74,130,192,0.15); border-color: #4a82c0; }
+.ctp-air   { background: rgba(74,130,192,0.25); --ctp-border: #4a82c0; }
 .ctp-air   .ctp-nation { color: #8ac4ee; }
-.ctp-earth { background: rgba(74,122,40,0.15);  border-color: #4a7a28; }
+.ctp-earth { background: rgba(74,122,40,0.25);  --ctp-border: #5a9030; }
 .ctp-earth .ctp-nation { color: #8acc50; }
-.ctp-water { background: rgba(42,120,184,0.15); border-color: #2a78b8; }
+.ctp-water { background: rgba(42,120,184,0.25); --ctp-border: #2a78b8; }
 .ctp-water .ctp-nation { color: #80c8f0; }
-.ctp-fire  { background: rgba(138,72,8,0.20);   border-color: #8a4808; }
+.ctp-fire  { background: rgba(180,90,10,0.30);  --ctp-border: #c06010; }
 .ctp-fire  .ctp-nation { color: #f0b840; }
 
 /* Scene active fade-in */
@@ -1551,7 +1568,10 @@ body {
   .appa-wrap       { opacity: 0.4; top: 2%; right: -5%; width: 55%; }
   .fire-temple-svg { width: 95%; }
   .aura-ring       { transform: scale(0.65) !important; }
-  .contact-panel   { width: 88%; }
+  /* Stack both panels vertically on small screens */
+  .career-tracks-panel { left: 5%; right: 5%; bottom: 42%; width: auto; }
+  .contact-panel  { right: 5%; left: 5%; bottom: 12%; min-width: 0; }
+  .ctp-links      { grid-template-columns: 1fr 1fr; }
   .intro-title     { font-size: clamp(1.2rem, 4vw, 2rem); }
   .ct-main         { font-size: clamp(1rem, 3vw, 1.8rem); }
   .earth-title, .fire-title, .water-title { font-size: clamp(0.9rem, 3vw, 1.6rem); }
