@@ -1569,6 +1569,68 @@ body {
   to   { opacity:1; transform: translateY(0); }
 }
 
+/* ═══════════════════════════════════════════════════
+   EASTER EGGS
+════════════════════════════════════════════════════ */
+
+/* Appa: exit to top-right */
+@keyframes appaFlyaway {
+  0%   { opacity: 1; transform: translate(0, 0) rotate(0deg); }
+  85%  { opacity: 1; transform: translate(90vw, -60vh) rotate(-14deg); }
+  100% { opacity: 0; transform: translate(125vw, -90vh) rotate(-20deg); }
+}
+
+/* Appa: re-enter from top-left */
+@keyframes appaReenter {
+  0%   { opacity: 0; transform: translate(-125vw, -90vh) rotate(18deg); }
+  15%  { opacity: 1; }
+  85%  { transform: translate(-8vw, -3vh) rotate(3deg); }
+  100% { opacity: 1; transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Whole-body bob while airborne */
+@keyframes appaBodyBob {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-8px); }
+}
+
+/* Leg flap */
+@keyframes appaLegFlap {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(7px); }
+}
+
+/* Fur wisp (top fur oscillates opposite legs) */
+@keyframes appaFurWave {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-5px); }
+}
+
+/* SVG body bob — higher specificity than #s-about.active .appa-svg (1 ID + 3 class) */
+#s-about .appa-wrap.appa-flying .appa-svg {
+  animation: appaBodyBob 0.18s steps(2) infinite;
+}
+#s-about .appa-wrap.appa-flying .appa-svg .appa-leg {
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+  animation: appaLegFlap 0.22s steps(2) infinite;
+}
+#s-about .appa-wrap.appa-flying .appa-svg .appa-leg:nth-child(12) { animation-delay: 0.055s; }
+#s-about .appa-wrap.appa-flying .appa-svg .appa-leg:nth-child(13) { animation-delay: 0.11s;  }
+#s-about .appa-wrap.appa-flying .appa-svg .appa-leg:nth-child(14) { animation-delay: 0.165s; }
+#s-about .appa-wrap.appa-flying .appa-svg .appa-fur {
+  transform-box: fill-box;
+  animation: appaFurWave 0.28s steps(2) infinite;
+}
+
+/* Wall crater appear */
+@keyframes craterAppear {
+  0%   { opacity: 0; }
+  40%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+.wall-crater { animation: craterAppear 0.25s steps(2) forwards; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
   .about-scroll    { width: 80%; left:50%; transform:translateX(-50%) translateY(-50%); }
