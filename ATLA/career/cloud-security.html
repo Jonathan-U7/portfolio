@@ -348,54 +348,50 @@
   <!-- ── PROJECTS ── -->
   <section class="career-section" id="projects">
     <h2 class="section-title">// PROJECTS &amp; LABS</h2>
-    <!--
-      FILL: Cloud/security projects — great options include:
-      - Home lab (self-hosted services, network segmentation, SIEM setup)
-      - CTF competition writeups (link to write-ups on GitHub)
-      - Terraform/IaC modules you've published
-      - Vulnerability research or CVE analysis
-      - Cloud architecture you deployed end-to-end
-    -->
     <div class="proj-grid">
 
       <div class="proj-card">
+        <div class="proj-title">Cloud-Native Web App — GCP Deployment</div>
+        <p class="proj-desc">End-to-end GCP cloud deployment progression: Flask app containerized with Docker, migrated from SQLite to Cloud Datastore (managed NoSQL), and deployed serverless on Google Cloud Run. Configured Gunicorn WSGI for production, managed secrets via env.yaml, and automated deploys with bash scripts. Deployed and live.</p>
+        <div class="proj-tech">
+          <span class="tag">GCP Cloud Run</span>
+          <span class="tag">GCP Datastore</span>
+          <span class="tag">Docker</span>
+          <span class="tag">OAuth2</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Gunicorn</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">GitHub →</a>
+          <a href="https://gcp-gb-325181999627.us-west1.run.app" class="proj-link">Live Demo →</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
+        <div class="proj-title">AI Personal Assistant — Cloud Microservice</div>
+        <p class="proj-desc">Stateless FastAPI server deployed on Cloud Run handles all OAuth2 credential management and external API calls (Google Calendar, Spotify, YouTube). A thin Gemini tool-calling client consumes the server's endpoints — AI layer fully decoupled from integration layer. Multi-provider OAuth2 flows implemented from scratch across Google and Spotify.</p>
+        <div class="proj-tech">
+          <span class="tag">GCP Cloud Run</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">OAuth2</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Gemini AI</span>
+          <span class="tag">Microservices</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">GitHub →</a>
+        </div>
+      </div>
+
+      <div class="proj-card">
         <div class="proj-title fill-me">PROJECT / LAB NAME</div>
-        <!--
-          FILL: What you built, the technical decisions you made, and what you learned
-          or achieved. For CTF writeups: challenge name, category, and your approach.
-        -->
         <p class="proj-desc fill-me">What you built or researched: cloud services used, security controls implemented, architecture decisions, and the outcome or what it demonstrates.</p>
         <div class="proj-tech">
           <span class="tag fill-me">AWS/Azure/GCP</span>
           <span class="tag fill-me">Tool</span>
         </div>
         <div class="proj-links">
-          <!-- FILL: GitHub, blog post, CTF writeup, or architecture diagram -->
           <a href="#" class="proj-link">GitHub →</a>
-          <a href="#" class="proj-link">Write-up →</a>
-        </div>
-      </div>
-
-      <div class="proj-card">
-        <div class="proj-title fill-me">PROJECT / CTF / LAB</div>
-        <p class="proj-desc fill-me">Technical description — what you configured, what attack/defense scenario you explored, or what infrastructure you automated.</p>
-        <div class="proj-tech">
-          <span class="tag fill-me">Tool</span>
-          <span class="tag fill-me">Platform</span>
-        </div>
-        <div class="proj-links">
-          <a href="#" class="proj-link">GitHub →</a>
-        </div>
-      </div>
-
-      <div class="proj-card">
-        <div class="proj-title fill-me">PROJECT NAME</div>
-        <p class="proj-desc fill-me">Security audit, penetration test, or cloud hardening project. Focus on what you discovered, what you fixed, and what you learned.</p>
-        <div class="proj-tech">
-          <span class="tag fill-me">Tool</span>
-          <span class="tag fill-me">Tech</span>
-        </div>
-        <div class="proj-links">
           <a href="#" class="proj-link">Write-up →</a>
         </div>
       </div>

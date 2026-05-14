@@ -330,61 +330,73 @@
   <!-- ── PROJECTS ── -->
   <section class="career-section" id="projects">
     <h2 class="section-title">// PROJECTS</h2>
-    <!--
-      FILL: 3–4 projects relevant to software/full-stack roles.
-      Best picks: web apps, APIs, CLIs, tools you built from scratch.
-      Include GitHub and/or live demo links where available.
-    -->
     <div class="proj-grid">
 
       <div class="proj-card">
-        <!-- FILL: Project name in ALL CAPS or Title Case -->
-        <div class="proj-title fill-me">PROJECT NAME</div>
-        <!--
-          FILL: 2–3 sentences. What problem does it solve? What did you build?
-          Who uses it or what was the outcome?
-        -->
-        <p class="proj-desc fill-me">2–3 sentence description: what the project does, what stack you used, and what you learned or delivered.</p>
+        <div class="proj-title">Personal AI Assistant</div>
+        <p class="proj-desc">Production-grade natural language agent that controls Spotify, manages Google Calendar (full CRUD + undo/redo), searches YouTube, and checks weather — all from a single chat interface. Built as a decoupled FastAPI MCP server (15+ endpoints) paired with a Gemini tool-calling client, deployed live on Google Cloud Run. Multi-provider OAuth2 across Google and Spotify.</p>
         <div class="proj-tech">
-          <!-- FILL: Technologies/languages used -->
-          <span class="tag fill-me">Tech</span>
-          <span class="tag fill-me">Tech</span>
-          <span class="tag fill-me">Tech</span>
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">Google Gemini</span>
+          <span class="tag">Spotify API</span>
+          <span class="tag">Google Calendar</span>
+          <span class="tag">OAuth2</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Cloud Run</span>
         </div>
         <div class="proj-links">
-          <!-- FILL: Update href to your GitHub repo URL -->
           <a href="#" class="proj-link">GitHub →</a>
-          <!-- FILL: Update href to live demo, or remove if not deployed -->
-          <a href="#" class="proj-link">Live Demo →</a>
         </div>
       </div>
 
       <div class="proj-card">
-        <div class="proj-title fill-me">PROJECT NAME</div>
-        <p class="proj-desc fill-me">What this project does, the challenge it solves, and what you're proud of technically.</p>
+        <div class="proj-title">Cloud-Native Web App — CS 430P</div>
+        <p class="proj-desc">Progressed through 4 iterations: Flask + SQLite → Dockerized → migrated to GCP Datastore (managed NoSQL) → deployed serverless on Google Cloud Run. Abstract model interface (Python ABC) meant zero changes to application logic when swapping databases. Deployed and live.</p>
         <div class="proj-tech">
-          <span class="tag fill-me">Tech</span>
-          <span class="tag fill-me">Tech</span>
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Docker</span>
+          <span class="tag">GCP Cloud Run</span>
+          <span class="tag">GCP Datastore</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Gunicorn</span>
         </div>
         <div class="proj-links">
           <a href="#" class="proj-link">GitHub →</a>
-          <a href="#" class="proj-link">Live Demo →</a>
+          <a href="https://gcp-gb-325181999627.us-west1.run.app" class="proj-link">Live Demo →</a>
         </div>
       </div>
 
       <div class="proj-card">
-        <div class="proj-title fill-me">PROJECT NAME</div>
-        <p class="proj-desc fill-me">Description focusing on scale, complexity, or interesting technical decisions you made.</p>
+        <div class="proj-title">8-Queens Solver — Genetic Algorithm</div>
+        <p class="proj-desc">Full genetic algorithm from scratch solving the 8-queens constraint satisfaction problem. Permutation encoding eliminates column conflicts by design, shrinking the search space before evolution begins. Features roulette-wheel selection, single-point crossover, swap mutation, elitism, and Matplotlib fitness history plots across configurable runs.</p>
         <div class="proj-tech">
-          <span class="tag fill-me">Tech</span>
-          <span class="tag fill-me">Tech</span>
+          <span class="tag">Python</span>
+          <span class="tag">Genetic Algorithms</span>
+          <span class="tag">Matplotlib</span>
+          <span class="tag">Constraint Satisfaction</span>
+          <span class="tag">Evolutionary Computation</span>
         </div>
         <div class="proj-links">
           <a href="#" class="proj-link">GitHub →</a>
         </div>
       </div>
 
-      <!-- FILL: Add a fourth project card if desired -->
+      <div class="proj-card">
+        <div class="proj-title">8-Puzzle Solver — A* &amp; BFS</div>
+        <p class="proj-desc">Benchmarked A* search with 3 heuristics (Manhattan distance, misplaced tiles, column consistency) against uninformed BFS on the classic 3×3 sliding tile puzzle across 9! = 362,880 possible states. Manhattan distance dramatically cuts nodes explored versus BFS — a concrete demonstration of why informed search matters.</p>
+        <div class="proj-tech">
+          <span class="tag">Python</span>
+          <span class="tag">A* Search</span>
+          <span class="tag">BFS</span>
+          <span class="tag">Heuristic Design</span>
+          <span class="tag">Priority Queue</span>
+        </div>
+        <div class="proj-links">
+          <a href="#" class="proj-link">GitHub →</a>
+        </div>
+      </div>
 
     </div>
   </section>
