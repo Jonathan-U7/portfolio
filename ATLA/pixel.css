@@ -1631,6 +1631,33 @@ body {
 }
 .wall-crater { animation: craterAppear 0.25s steps(2) forwards; }
 
+/* ── Fire charring animations ── */
+
+/* Flame flicker — scales from bottom center like a real flame */
+@keyframes charFlicker {
+  0%   { transform: scaleY(1.00) scaleX(1.00); opacity: 1.00; }
+  30%  { transform: scaleY(0.58) scaleX(1.28); opacity: 0.70; }
+  65%  { transform: scaleY(1.14) scaleX(0.90); opacity: 0.94; }
+  100% { transform: scaleY(1.00) scaleX(1.00); opacity: 1.00; }
+}
+
+/* Ember glow pulse */
+@keyframes charGlowPulse {
+  0%, 100% { opacity: 0.22; }
+  50%       { opacity: 0.60; }
+}
+
+.char-flame {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: charFlicker 0.42s steps(3) infinite;
+}
+/* Stagger mid and tip so flames feel independent */
+.char-flame.cf-mid { animation-delay: 0.14s; animation-duration: 0.50s; }
+.char-flame.cf-tip { animation-delay: 0.26s; animation-duration: 0.32s; }
+
+.char-glow { animation: charGlowPulse 1.0s steps(4) infinite; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 600px) {
   .about-scroll    { width: 80%; left:50%; transform:translateX(-50%) translateY(-50%); }
